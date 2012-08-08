@@ -1,15 +1,6 @@
-" Name:     sexy-railscast vim colorscheme
-" Modifier: Oguz Bilgic <fisyonet@gmail.com>
-" Url:      https://github.com/oguzbilgic/sexy-railscasts-theme
-" License:  public domain
-"
-" A GUI Only port of the RailsCasts TextMate theme [1] to Vim.
-" Some parts of this theme were borrowed from the well-documented Lucius theme [2].
-" Initial file was written by Josh O'Rourke [3] then improved by Oguz Bilgic
-"
-" [1] http://railscasts.com/about
-" [2] http://www.vim.org/scripts/script.php?script_id=2536
-" [3] https://github.com/jpo/vim-railscasts-theme
+" Name:     better-railscast
+" First Modifier: Oguz Bilgic <fisyonet@gmail.com>
+" Second Modifier: Reda Lemeden <reda@thoughtbot.com>
 
 " -----------------------------------------------------------------------------------
 " Settings
@@ -101,4 +92,3 @@ hi htmlLink                  guifg=#6D9CBE
 hi link htmlTag              xmlTag
 hi link htmlTagName          xmlTagName
 hi link htmlEndTag           xmlEndTag
-

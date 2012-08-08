@@ -6,8 +6,7 @@ set guioptions-=r
 
 " Look & Feel
 
-colorscheme better-railscasts
-
+colorscheme sexy-railscasts
 
 set guifont=Inconsolata\ for\ Powerline:h15
 let Powerline_symbols = 'compatible'

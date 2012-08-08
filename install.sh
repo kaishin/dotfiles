@@ -28,7 +28,7 @@ for name in *; do
       if [[ -n `grep "$cutstring" "$name"` ]]; then
         cp "$PWD/$name" "$target"
       else
-        ln -s "$PWD/$name" "$target"
+        ln -f -s "$PWD/$name" "$target"
       fi
     fi
   fi

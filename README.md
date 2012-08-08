@@ -1,15 +1,3 @@
-thoughtbot dotfiles
-===================
-
-Flow:
-
-* Fork this repo.
-* Clone your fork.
-* Install.
-* Track thoughtbot/dotfiles.
-* Customize in master.
-* Update.
-
 Install
 -------
 
@@ -20,12 +8,12 @@ From your cloned directory:
 This will create symlinks for all config files in your home directory. You can
 safely run this file multiple times to update.
 
-Track thoughtbot/dotfiles
+Track Dotfiles
 -------------------------
 
 One time:
 
-    git remote add upstream git@github.com:thoughtbot/dotfiles.git
+    git remote add upstream git@github.com:kaishin/dotfiles.git
     git fetch upstream
     git checkout -b upstream upstream/master
 

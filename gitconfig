@@ -8,11 +8,8 @@
 [mergetool]
   keepBackup = true
 [alias]
-  up = !git fetch origin && git rebase origin/master
-  down = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
   co = !git checkout
   c = commit -m
-  rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
 [push]
   default = tracking
 [format]

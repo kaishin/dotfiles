@@ -6,7 +6,8 @@ set guioptions-=r
 
 " Look & Feel
 
-colorscheme sexy-railscasts
+" colorscheme sexy-railscasts
+colorscheme tomorrow-night
 
 set guifont=Inconsolata\ for\ Powerline:h15
 let Powerline_symbols = 'compatible'
@@ -14,7 +15,7 @@ let g:Powerline_symbols = 'fancy'
 " let g:Powerline_theme="skwp"
 " let g:Powerline_colorscheme="skwp"
 
-" ======================================================= Mappings
+" ======================================================= MAPPINGS
 
 " Go back to normal mode with jk OR kj OR jj OR kk
 imap jk <Esc>
@@ -42,10 +43,6 @@ let g:user_zen_settings = {
 \  'indentation' : ' '
 \}
 
-" MITx Shortcuts
-nmap -t :cd ~/Sites/mitx_all/templates/<cr>
-nmap -a :cd ~/Sites/mitx_all/askbot-devel/askbot/skins/<cr>
-
 " Disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
@@ -67,8 +64,6 @@ endif
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " Vim backups
-" set backupdir=~/.vim_backups//
-" set directory=~/.vim_backups//
 set nobackup
 set nowritebackup
 set noswapfile
@@ -89,6 +84,12 @@ let g:session_autosave = 'no'
 let g:session_autoload = 'no'
 
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+
+"========================================================= VUNDLE
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

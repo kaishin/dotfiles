@@ -9,7 +9,7 @@ set guioptions-=r
 " colorscheme sexy-railscasts
 colorscheme tomorrow-night
 
-set guifont=Inconsolata\ for\ Powerline:h15
+set guifont=Inconsolata\ for\ Powerline:h13
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 " let g:Powerline_theme="skwp"
@@ -35,7 +35,8 @@ nmap <return> :
 
 " Handy shortcuts
 nmap <Leader>n :NERDTreeToggle<cr>
-nmap :t :CommandT<cr>
+nmap <Leader>t :CommandT<cr>
+nmap <Leader>v :e $MYVIMRC<cr>
 
 " Set zen coding to new shortcut
 let g:user_zen_expandabbr_key = '<c-z>'
@@ -142,11 +143,6 @@ endif
 if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor
 endif
-
-" Color scheme
-" colorscheme vividchalk
-" highlight NonText guibg=#060606
-" highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Numbers
 set number

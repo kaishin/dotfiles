@@ -1,5 +1,7 @@
 call pathogen#infect()
 
+source $HOME/.vim/vimrc/mappings.vim
+
 " Hide that butt-ugly toolbar
 set guioptions=egmrt
 set guioptions-=r
@@ -9,57 +11,17 @@ set guioptions-=r
 " colorscheme sexy-railscasts
 colorscheme tomorrow-night
 
-set guifont=Inconsolata\ for\ Powerline:h13
+set guifont=Inconsolata\ for\ Powerline:h14
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 " let g:Powerline_theme="skwp"
 " let g:Powerline_colorscheme="skwp"
-
-" ======================================================= MAPPINGS
-
-" Go back to normal mode with jk OR kj OR jj OR kk
-imap jk <Esc>
-imap kj <Esc>
-imap jj <Esc>
-imap kk <Esc>
-
-" Remap Caps lock
-imap <C-a> <Esc>
-vmap <C-a> <Esc>
-
-" Easier tab completion
-imap <Tab> <C-P>
-
-" Saves time
-nmap <return> :
-
-" Handy shortcuts
-nmap <Leader>n :NERDTreeToggle<cr>
-nmap <Leader>t :CommandT<cr>
-nmap <Leader>v :e $MYVIMRC<cr>
 
 " Set zen coding to new shortcut
 let g:user_zen_expandabbr_key = '<c-z>'
 let g:user_zen_settings = {
 \  'indentation' : ' '
 \}
-
-" Disable arrow keys
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
-
-" CSS Sorting
-vmap <Leader>1 :!sort<CR>
-map <Leader>2 !sortcss<CR>
-map <Leader>3 viB !sortcss<CR>
-map <Leader>4 ?{<CR>jV}k!sortcss<CR>:noh<CR>
-
-"Source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
 
 " SCSS syntax highlighting (cakebaker)
 au BufRead,BufNewFile *.scss set filetype=scss

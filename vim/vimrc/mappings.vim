@@ -17,8 +17,10 @@ nmap <return> :
 " Handy shortcuts
 nmap <Leader>n :NERDTreeToggle<cr>
 nmap <Leader>t :CommandT<cr>
-nmap <Leader>v :e $MYVIMRC<cr>
-nmap <leader>u :source $MYVIMRC<cr> :echoe "Vimrc sourced!"<cr>
+nmap <Leader>v :tabe $MYVIMRC<cr>:vsp $HOME/.vim/vimrc/mappings.vim<cr>
+nmap <leader>u :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
+nmap <leader>i ==
+vmap <leader>i ==
 map <leader>c <c-_><c-_>
 
 " CSS Sorting

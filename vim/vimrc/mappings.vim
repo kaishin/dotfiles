@@ -5,7 +5,7 @@ let mapleader = " "
 imap jj <Esc>jj
 imap kk <Esc>kk
 imap hh <Esc>hh
-imap ll <Esc>ll
+imap lll <Esc>lll
 
 " Remap Caps lock
 imap <C-a> <Esc>

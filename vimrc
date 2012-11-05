@@ -55,6 +55,15 @@ Bundle 'gmarik/vundle'
 
 " Github bundles
 Bundle 'tpope/vim-markdown'
+Bundle 'wincent/Command-T'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-commentary'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-rails'
+Bundle 'xolox/vim-session'
+Bundle 'tpope/vim-surround'
+Bundle 'mattn/zencoding-vim'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

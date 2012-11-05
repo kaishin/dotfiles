@@ -10,6 +10,7 @@ ZSH_THEME="robbyrussell"
 # Aliases
 alias zshconfig="mvim ~/.zshrc"
 alias ohmyzsh="mvim ~/.oh-my-zsh"
+alias git=hub
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -31,3 +32,6 @@ export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/Cellar/gettext/0.1
 # Virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Use default Ruby in each new session
+rvm use

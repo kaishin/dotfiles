@@ -49,10 +49,12 @@ let g:session_autoload = 'no'
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 "========================================================= VUNDLE
-set rtp+=~/.vim/vundle.git/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
 Bundle 'gmarik/vundle'
+
+" Github bundles
+Bundle 'tpope/vim-markdown'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

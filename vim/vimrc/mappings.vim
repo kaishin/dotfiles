@@ -13,6 +13,7 @@ vmap <C-a> <Esc>
 
 " Saves time
 nmap <return> :
+nmap % V%
 
 " Handy shortcuts
 nmap <Leader>n :NERDTreeToggle<cr>

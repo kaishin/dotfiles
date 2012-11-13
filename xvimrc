@@ -1,0 +1,9 @@
+" Go back to normal mode with jk OR kj OR jj OR kk
+imap jj <Esc>jj
+imap kk <Esc>kk
+imap hh <Esc>hh
+imap lll <Esc>lll
+
+" Remap Caps lock
+imap <C-a> <Esc>
+vmap <C-a> <Esc>

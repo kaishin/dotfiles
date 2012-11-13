@@ -1,5 +1,3 @@
-call pathogen#infect()
-
 source $HOME/.vim/vimrc/mappings.vim
 
 " Hide that butt-ugly toolbar
@@ -8,14 +6,11 @@ set guioptions-=r
 
 " Look & Feel
 
-" colorscheme sexy-railscasts
 colorscheme tomorrow-night
 
 set guifont=Inconsolata\ for\ Powerline:h14
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
-" let g:Powerline_theme="skwp"
-" let g:Powerline_colorscheme="skwp"
 
 " Set zen coding to new shortcut
 let g:user_zen_expandabbr_key = '<c-z>'
@@ -46,20 +41,23 @@ command! -complete=file -nargs=1 Remove :echo 'Remove: '.'<f-args>'.' '.(delete(
 let g:session_autosave = 'no'
 let g:session_autoload = 'no'
 
-au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
-
 "========================================================= VUNDLE
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Github bundles
-Bundle 'tpope/vim-markdown'
+" --Syntax
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'othree/html5.vim'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'tpope/vim-cucumber'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'tpope/vim-rails'
+" --Utilities
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
-Bundle 'hail2u/vim-css3-syntax'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'tpope/vim-rails'
 Bundle 'xolox/vim-session'
 Bundle 'tpope/vim-surround'
 Bundle 'mattn/zencoding-vim'
@@ -67,9 +65,8 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'danro/rename.vim'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-cucumber'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'gregsexton/MatchTag'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

@@ -83,7 +83,6 @@ Bundle 'tpope/vim-endwise'
 Bundle 'danro/rename.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tsaleh/vim-matchit'
-Bundle 'gregsexton/MatchTag'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

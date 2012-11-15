@@ -18,6 +18,7 @@ nmap % V%
 " Handy shortcuts
 nmap <Leader>n :NERDTreeToggle<cr>
 nmap <Leader>t :CommandT<cr>
+nmap <Leader>b :CommandTBuffer<cr>
 nmap <Leader>v :tabe $MYVIMRC<cr>:vsp $HOME/.vim/vimrc/mappings.vim<cr>
 nmap <leader>u :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
 nmap <leader>i ==

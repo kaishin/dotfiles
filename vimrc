@@ -1,4 +1,5 @@
 source $HOME/.vim/vimrc/mappings.vim
+source $HOME/.vim/vimrc/zencoding.vim
 
 " Hide that butt-ugly toolbar
 set guioptions=egmrt
@@ -11,12 +12,6 @@ colorscheme tomorrow-night
 set guifont=Inconsolata\ for\ Powerline:h14
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
-
-" Set zen coding to new shortcut
-let g:user_zen_expandabbr_key = '<c-z>'
-let g:user_zen_settings = {
-\  'indentation' : ' '
-\}
 
 " SCSS syntax highlighting (cakebaker)
 au BufRead,BufNewFile *.scss set filetype=scss

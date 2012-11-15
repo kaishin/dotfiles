@@ -155,4 +155,4 @@ autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix
 autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
 
 " Treat <li> and <p> tags like the block tags they are
-let g:html_indent_tags = 'li\|p'
+" let g:html_indent_tags = 'li\|p'

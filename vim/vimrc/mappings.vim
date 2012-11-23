@@ -23,6 +23,7 @@ nmap <leader>u :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
 nmap <leader>i ==
 vmap <leader>i ==
 map <leader>c <c-_><c-_>
+nnoremap <leader>l :NumbersToggle<CR>
 
 " CSS Sorting
 nmap <Leader>s ?{<CR>jV}k!sortcss<CR>:noh<CR>

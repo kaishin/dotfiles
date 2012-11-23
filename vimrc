@@ -79,6 +79,7 @@ Bundle 'danro/rename.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/Auto-Pairs'
+Bundle 'myusuf3/numbers.vim'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

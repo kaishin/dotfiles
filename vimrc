@@ -78,6 +78,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'danro/rename.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-scripts/Auto-Pairs'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

@@ -6,7 +6,7 @@
 [core]
   excludesfile = /Users/reda/.gitignore
 [mergetool]
-	keepBackup = true
+	keepBackup = false
 [alias]
   co = !git checkout
   c = commit -m

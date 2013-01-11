@@ -14,3 +14,6 @@ vim/.netrwhist
 zeus.json
 .githubconfig
 .foreman
+bin/stubs
+.powder
+.powenv

@@ -13,3 +13,4 @@ vendor/bundler_gems
 vim/.netrwhist
 zeus.json
 .githubconfig
+.foreman

@@ -1,20 +1,35 @@
 source $HOME/.vim/vimrc/mappings.vim
 source $HOME/.vim/vimrc/zencoding.vim
+source $HOME/.vim/vimrc/autoload.vim
 
 " Hide that butt-ugly toolbar
 set guioptions=egmrt
 set guioptions-=r
 
 " Look & Feel
-
 colorscheme tomorrow-night
 
 set guifont=Inconsolata\ for\ Powerline:h14
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 
-" SCSS syntax highlighting (cakebaker)
-au BufRead,BufNewFile *.scss set filetype=scss
+if has("autocmd")
+    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType scss setlocal omnifunc=csscomplete#CompleteCSS
+
+    " Make CSS omnicompletion work for SASS and SCSS
+    " autocmd bufnewfile,bufread *.scss set ft=scss.css
+    " autocmd bufnewfile,bufread *.sass set ft=sass.css
+
+    " Make jQuery omnicompletion work for javascript files
+    autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
+    autocmd BufRead *.json set ft=javascript
+
+    " Enable spellchecking for Markdown
+    autocmd BufRead,BufNewFile *.md setlocal spell
+endif
 
 " Vim backups
 set nobackup
@@ -29,15 +44,25 @@ set cursorcolumn
 set splitbelow
 set splitright
 
+" Autoload changed files
+set autoread
+
 " Delete file
 command! -complete=file -nargs=1 Remove :echo 'Remove: '.'<f-args>'.' '.(delete(<f-args>) == 0 ? 'SUCCEEDED' : 'FAILED')
 
 " Disable session auto-save and auto-load
-let g:session_autosave = 'no'
-let g:session_autoload = 'no'
+let g:session_autosave = 'yes'
+let g:session_autoload = 'yes'
+
+" Enable neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/snippets'
 
 " CommandT options
 let g:CommandTMaxHeight = 10
+
 
 " Ignore these files
 set wildignore+=*.sw?
@@ -62,10 +87,11 @@ Bundle 'gmarik/vundle'
 " --Syntax
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'othree/html5.vim'
-Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'kaishin/scss-syntax.vim'
 Bundle 'tpope/vim-cucumber'
-Bundle 'plasticboy/vim-markdown'
+Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
+Bundle 'nono/jquery.vim'
 " --Utilities
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
@@ -80,6 +106,9 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/Auto-Pairs'
 Bundle 'myusuf3/numbers.vim'
+" Bundle 'Valloric/YouCompleteMe'
+Bundle 'neocomplcache'
+Bundle 'Shougo/neosnippet'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

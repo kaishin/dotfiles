@@ -5,9 +5,10 @@
 	email = reda@thoughtbot.com
 [core]
   excludesfile = /Users/reda/.gitignore
+	editor = mvim -f
 [mergetool]
 	keepBackup = false
-	prompt = false
+  prompt = false
 [alias]
   co = !git checkout
   c = commit -m
@@ -16,14 +17,15 @@
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [github]
-	user = kaishin
+  user = kaishin
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
-	tool = Kaleidoscope
+  tool = Kaleidoscope
 [difftool]
-	prompt = false
+  prompt = false
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
 [merge]
-	tool = Kaleidoscope
+  tool = Kaleidoscope

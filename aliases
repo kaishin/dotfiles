@@ -1,20 +1,32 @@
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
 alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
-alias g="git"
-alias s="bundle exec rspec"
-alias cuc="bundle exec cucumber"
 alias gi="gem install"
-alias giv="gem install -v"
-alias gci="git pull --rebase && rake && git push"
-alias tlf="tail -f"
-alias b="bundle"
-alias be="bundle exec"
-alias ln='ln -v'
-alias mkdir='mkdir -p'
-alias ...='../..'
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias ...="../.."
+alias drop-db="rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare"
 
-alias -g G='| grep'
-alias -g M='| less'
-alias -g L='| wc -l'
-alias -g ONE="| awk '{ print \$1}'"
+# Dribbble Feeds
+alias feedme="cat ~/Dropbox/Inspiration/Inbox/feed.txt"
+alias clean-feedme="rm ~/Dropbox/Inspiration/Inbox/feed.txt && touch ~/Dropbox/Inspiration/Inbox/feed.txt"
+
+# Heroku Deploy
+alias deploy-staging="git push staging master && heroku run rake db:migrate --remote staging"
+
+# Git & Github
+alias g="git"
+alias github="hub"
+alias grb="git create-branch"
+alias gdb="git delete-branch"
+alias gpr="hub pull-request"
+alias gitlog="git log --pretty=format:%s"
+
+# Nearlyfreespeech
+alias sshnfs="ssh kaishin_kaishinlab@ssh.phx.nearlyfreespeech.net"
+
+# Use updated rsync
+alias rsync="/usr/local/bin/rsync"
+
+# Launch Tower
+alias tower="gittower"

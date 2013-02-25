@@ -28,10 +28,6 @@ nmap <leader>v :vsp<CR>
 nmap <leader>h :sp<CR>
 nmap <leader>f :CommandTFlush<cr>
 
-" Neosnippet & neocomplcache
-imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
 " Remove empty lines
 nmap <leader>e :%s/\n\{3,}/\r\r/e<cr> :echoe "Empty lines removed!"<cr>
 

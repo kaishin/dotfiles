@@ -1,5 +1,4 @@
 source $HOME/.vim/vimrc/mappings.vim
-source $HOME/.vim/vimrc/zencoding.vim
 source $HOME/.vim/vimrc/autoload.vim
 
 " Hide that butt-ugly toolbar
@@ -16,12 +15,12 @@ let g:Powerline_symbols = 'fancy'
 if has("autocmd")
     autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
     autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-    autocmd FileType scss setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType css, scss setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
     " Make CSS omnicompletion work for SASS and SCSS
-    " autocmd bufnewfile,bufread *.scss set ft=scss.css
-    " autocmd bufnewfile,bufread *.sass set ft=sass.css
+    autocmd bufnewfile,bufread *.scss set ft=scss.css
+    autocmd bufnewfile,bufread *.sass set ft=sass.css
 
     " Make jQuery omnicompletion work for javascript files
     autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
@@ -54,15 +53,26 @@ command! -complete=file -nargs=1 Remove :echo 'Remove: '.'<f-args>'.' '.(delete(
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
 
-" Enable neocomplcache
+" Neocomplcache options
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_max_list = 10
+let g:neocomplcache_auto_completion_start_length = 3
+let g:neocomplcache_force_overwrite_completefunc = 1
 
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/snippets'
+" UltiSnips options
+let g:UltiSnipsExpandTrigger = '<c-z>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsSnippetDirectories = [ 'UltiSnips', 'snippets' ]
+let g:UltiSnipsSnippetsDir = '~/.vim/snippets'
 
 " CommandT options
 let g:CommandTMaxHeight = 10
-
 
 " Ignore these files
 set wildignore+=*.sw?
@@ -90,15 +100,15 @@ Bundle 'othree/html5.vim'
 Bundle 'kaishin/scss-syntax.vim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-markdown'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'nono/jquery.vim'
 " --Utilities
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'lokaltog/vim-powerline'
 Bundle 'xolox/vim-session'
 Bundle 'tpope/vim-surround'
-Bundle 'mattn/zencoding-vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'danro/rename.vim'
@@ -106,9 +116,8 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/Auto-Pairs'
 Bundle 'myusuf3/numbers.vim'
-" Bundle 'Valloric/YouCompleteMe'
-Bundle 'neocomplcache'
-Bundle 'Shougo/neosnippet'
+Bundle 'UltiSnips'
+Bundle 'Shougo/neocomplcache'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

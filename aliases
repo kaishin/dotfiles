@@ -8,8 +8,9 @@ alias ...="../.."
 alias drop-db="rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare"
 
 # Dribbble Feeds
-alias feedme="cat ~/Dropbox/Inspiration/Inbox/feed.txt"
-alias clean-feedme="rm ~/Dropbox/Inspiration/Inbox/feed.txt && touch ~/Dropbox/Inspiration/Inbox/feed.txt"
+alias feed="cat ~/Dropbox/Inspiration/Inbox/feed.txt"
+alias feed-clear="rm ~/Dropbox/Inspiration/Inbox/feed.txt && touch ~/Dropbox/Inspiration/Inbox/feed.txt"
+alias dribbble-clear="rm ~/Dropbox/Inspiration/Dribbble/*"
 
 # Heroku Deploy
 alias deploy-staging="git push staging master && heroku run rake db:migrate --remote staging"
@@ -20,6 +21,8 @@ alias github="hub"
 alias grb="git create-branch"
 alias gdb="git delete-branch"
 alias gpr="hub pull-request"
+alias gco="git checkout"
+alias gres="git reset --hard"
 alias gitlog="git log --pretty=format:%s"
 
 # Nearlyfreespeech

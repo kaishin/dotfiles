@@ -9,7 +9,7 @@ set guioptions-=r
 " Look & Feel
 colorscheme tomorrow-night
 
-set guifont=Inconsolata\ for\ Powerline:h14
+set guifont=Inconsolata\ for\ Powerline:h16
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 

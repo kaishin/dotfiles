@@ -65,8 +65,8 @@ let g:neocomplcache_force_overwrite_completefunc = 1
 
 " UltiSnips options
 let g:UltiSnipsExpandTrigger = '<c-z>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsJumpForwardTrigger = '<c-z>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-s>'
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsSnippetDirectories = [ 'UltiSnips', 'snippets' ]
 let g:UltiSnipsSnippetsDir = '~/.vim/snippets'

@@ -78,13 +78,12 @@ let g:CommandTMaxHeight = 10
 set wildignore+=*.sw?
 set wildignore+=.git,.svn
 set wildignore+=*.zip,*.gz,*.bz,*.tar
-set wildignore=*.pyc,*.pyo,*.o,*.obj,*~
+set wildignore+=*.pyc,*.pyo,*.o,*.obj,*~
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*
 set wildignore+=*DS_Store*
-set wildignore+=vendor/rails/**,vendor/cache/**
 set wildignore+=*.gem
-set wildignore+=log/**,tmp/**,cache/**
+set wildignore+=log/**,tmp/**,cache/**,vendor/**
 set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*.avi,*.wmv,*.ogg,*.mp3,*.mov
 

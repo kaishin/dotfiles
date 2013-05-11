@@ -1,5 +1,6 @@
 source $HOME/.vim/vimrc/mappings.vim
 source $HOME/.vim/vimrc/autoload.vim
+source $HOME/.vim/vimrc/commands.vim
 
 " Hide that butt-ugly toolbar
 set guioptions=egmrt

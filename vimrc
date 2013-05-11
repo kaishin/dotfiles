@@ -51,7 +51,7 @@ command! -complete=file -nargs=1 Remove :echo 'Remove: '.'<f-args>'.' '.(delete(
 
 " Disable session auto-save and auto-load
 let g:session_autosave = 'yes'
-let g:session_autoload = 'yes'
+let g:session_autoload = 'no'
 
 " Neocomplcache options
 let g:neocomplcache_enable_at_startup = 1

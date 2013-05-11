@@ -22,6 +22,8 @@ alias grb="git create-branch"
 alias gdb="git delete-branch"
 alias gpr="hub pull-request"
 alias gco="git checkout"
+alias ghco="hub checkout"
+alias ghb="hub browse"
 alias gres="git reset --hard"
 alias gitlog="git log --pretty=format:%s"
 

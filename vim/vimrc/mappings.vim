@@ -26,7 +26,7 @@ map <leader>c <c-_><c-_>
 nnoremap <leader>l :NumbersToggle<CR>
 nmap <leader>v :vsp<CR>
 nmap <leader>h :sp<CR>
-nmap <leader>f :CommandTFlush<cr>
+nmap <leader>g :Gbrowse<CR>
 
 " Remove empty lines
 nmap <leader>e :%s/\n\{3,}/\r\r/e<cr> :echoe "Empty lines removed!"<cr>

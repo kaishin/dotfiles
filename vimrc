@@ -19,10 +19,6 @@ if has("autocmd")
     autocmd FileType css, scss setlocal omnifunc=csscomplete#CompleteCSS
     autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
-    " Make CSS omnicompletion work for SASS and SCSS
-    autocmd bufnewfile,bufread *.scss set ft=scss.css
-    autocmd bufnewfile,bufread *.sass set ft=sass.css
-
     " Make jQuery omnicompletion work for javascript files
     autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
     autocmd BufRead *.json set ft=javascript
@@ -99,18 +95,20 @@ Bundle 'gmarik/vundle'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'othree/html5.vim'
 Bundle 'kaishin/scss-syntax.vim'
+Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-markdown'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'nono/jquery.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'slim-template/vim-slim'
 " --Utilities
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
-Bundle 'lokaltog/vim-powerline'
+Bundle 'git://github.com/Lokaltog/vim-powerline.git'
 Bundle 'xolox/vim-session'
 Bundle 'tpope/vim-surround'
-Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'danro/rename.vim'
 Bundle 'tomtom/tcomment_vim'
@@ -119,6 +117,8 @@ Bundle 'vim-scripts/Auto-Pairs'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'UltiSnips'
 Bundle 'Shougo/neocomplcache'
+Bundle 'rking/ag.vim'
+Bundle 'tpope/vim-fugitive'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

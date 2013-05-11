@@ -8,7 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Aliases
-alias zshconfig="mvim ~/.zshrc"
+alias zshrc="mvim ~/.zshrc"
 alias ohmyzsh="mvim ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion

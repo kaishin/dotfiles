@@ -25,6 +25,9 @@ if has("autocmd")
 
     " Enable spellchecking for Markdown
     autocmd BufRead,BufNewFile *.md setlocal spell
+
+    " Fold by indentation for Coffeescript
+    autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 endif
 
 " Vim backups

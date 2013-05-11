@@ -26,7 +26,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # List of default plugins: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-plugins=(git brew gem git-extras bundler)
+plugins=(git brew gem git-extras bundler Forklift bower npm osx evm)
 
 source $ZSH/oh-my-zsh.sh
 

@@ -1,13 +1,13 @@
 [include]
   path = .githubconfig
 [user]
-	name = Reda Lemeden
-	email = reda@thoughtbot.com
+  name = Reda Lemeden
+  email = reda@thoughtbot.com
 [core]
   excludesfile = /Users/reda/.gitignore
-	editor = mvim -f
+  editor = mvim -f
 [mergetool]
-	keepBackup = false
+  keepBackup = false
   prompt = false
 [alias]
   co = !git checkout
@@ -29,3 +29,9 @@
   trustExitCode = true
 [merge]
   tool = Kaleidoscope
+[color]
+  ui = always
+[case]
+  ignorecase = false
+[web]
+  browser = open

@@ -32,11 +32,17 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/Cellar/gettext/0.18.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/local/heroku/bin
 
-# Virtualenv
+export PATH=/usr/local/share/python:$PATH
+export PATH=/usr/local/Cellar/python/2.7.4/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/Cellar/gettext/0.18.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/local/heroku/bin
+
+## virtualenvwrapper configs
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+#virtualenv shell script
+source /usr/local/share/python/virtualenvwrapper.sh
 
 # Use default Ruby in each new session
 rvm use

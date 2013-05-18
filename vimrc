@@ -16,7 +16,7 @@ let g:Powerline_symbols = 'fancy'
 if has("autocmd")
     autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
     autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-    autocmd FileType css, scss setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
     autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
     " Make jQuery omnicompletion work for javascript files
@@ -27,7 +27,7 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.md setlocal spell
 
     " Fold by indentation for Coffeescript
-    autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+    autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent nofoldenable
 endif
 
 " Vim backups
@@ -93,34 +93,33 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Github bundles
-" --Syntax
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'othree/html5.vim'
-Bundle 'kaishin/scss-syntax.vim'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-markdown'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'nono/jquery.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'slim-template/vim-slim'
-" --Utilities
-Bundle 'wincent/Command-T'
-Bundle 'scrooloose/nerdtree'
-Bundle 'git://github.com/Lokaltog/vim-powerline.git'
-Bundle 'xolox/vim-session'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-endwise'
-Bundle 'danro/rename.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'vim-scripts/Auto-Pairs'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'UltiSnips'
+Bundle 'EasyMotion'
 Bundle 'Shougo/neocomplcache'
+Bundle 'UltiSnips'
+Bundle 'danro/rename.vim'
+Bundle 'git://github.com/Lokaltog/vim-powerline.git'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'kaishin/scss-syntax.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'nono/jquery.vim'
+Bundle 'othree/html5.vim'
 Bundle 'rking/ag.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'slim-template/vim-slim'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/Auto-Pairs'
+Bundle 'wincent/Command-T'
+Bundle 'xolox/vim-session'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

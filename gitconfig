@@ -1,13 +1,11 @@
-[include]
-  path = .githubconfig
 [user]
-  name = Reda Lemeden
-  email = reda@thoughtbot.com
+	name = Reda Lemeden
+	email = reda@thoughtbot.com
 [core]
   excludesfile = /Users/reda/.gitignore
   editor = mvim -f
 [mergetool]
-  keepBackup = false
+	keepBackup = false
   prompt = false
 [alias]
   co = !git checkout

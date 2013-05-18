@@ -18,6 +18,8 @@ nmap <return> :
 nmap <Leader>n :NERDTreeToggle<cr>
 nmap <Leader>t :CommandT<cr>
 nmap <Leader>b :CommandTBuffer<cr>
+nmap <Leader>f :CommandTFlush<cr>
+nmap <Leader>p :UltiSnipsEdit<cr>
 nmap <Leader>r :tabe $MYVIMRC<cr>:vsp $HOME/.vim/vimrc/mappings.vim<cr>
 nmap <leader>u :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
 nmap <leader>i ==

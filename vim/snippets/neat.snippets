@@ -1,0 +1,9 @@
+snippet nbp  "Create a new breakpoint"
+$${1}: new-breakpoint(${3}$${2}-breakpoint)${4}
+endsnippet
+
+snippet media "Include media breakpoint" !b
+@include media(${1}) {
+  ${2}
+}${3}
+endsnippet

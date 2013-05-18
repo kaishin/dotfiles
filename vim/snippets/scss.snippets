@@ -1,6 +1,12 @@
-snippet @i "@import" !b
+extends neat
+
+snippet im "@import" !b
 @import "${1}";
 ${2}
+endsnippet
+
+snippet in "@include" !b
+@include ${1}${2:(${3})}$0;${4}
 endsnippet
 
 snippet dkn "Darken color"
@@ -439,22 +445,6 @@ endsnippet
 
 snippet grad "grad"
 +background(linear-gradient(top, ${1:white, black}))$0
-endsnippet
-
-snippet in "border-box"
-+box-sizing(border-box)
-endsnippet
-
-snippet import "import"
-@import '${1:compass/css3}'$0
-endsnippet
-
-snippet @ "import"
-@import '${1:compass/css3}'$0
-endsnippet
-
-snippet i "import"
-@import '${1:compass/css3}'$0
 endsnippet
 
 snippet ra "rgba"

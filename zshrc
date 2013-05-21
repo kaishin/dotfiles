@@ -45,7 +45,7 @@ export PIP_RESPECT_VIRTUALENV=true
 source /usr/local/share/python/virtualenvwrapper.sh
 
 # Use default Ruby in each new session
-rvm use
+rvm use >/dev/null
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin

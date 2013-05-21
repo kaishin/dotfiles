@@ -10,6 +10,10 @@ snippet h "Titles"
 <h$1>${2}</h$1>
 endsnippet
 
+snippet h1 "<h1>"
+<h1 id="${1/[\w\d]+|( )/(?1:-:\L$0\E)/g}">${1}</h1>
+endsnippet
+
 snippet section "<section>"
 <section ${1:class="${2:class}"}>
   ${3}

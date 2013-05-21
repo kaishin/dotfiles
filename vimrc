@@ -8,8 +8,7 @@ set guioptions-=r
 
 " Look & Feel
 colorscheme tomorrow-night
-
-set guifont=Inconsolata\ for\ Powerline:h16
+set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 
@@ -97,7 +96,7 @@ Bundle 'EasyMotion'
 Bundle 'Shougo/neocomplcache'
 Bundle 'UltiSnips'
 Bundle 'danro/rename.vim'
-Bundle 'git://github.com/Lokaltog/vim-powerline.git'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'kaishin/scss-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'

@@ -27,12 +27,16 @@ if has("autocmd")
 
     " Fold by indentation for Coffeescript
     autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent nofoldenable
+    autocmd BufRead,BufNewFile *.css,*.scss setlocal foldmethod=marker foldmarker={,}
 endif
 
 " Vim backups
 set nobackup
 set nowritebackup
 set noswapfile
+
+" Open all folds
+set foldlevelstart=20
 
 " Highlight cursor Line + Column
 set cursorline

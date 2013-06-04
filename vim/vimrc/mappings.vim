@@ -26,15 +26,16 @@ nmap <leader>i ==
 vmap <leader>i ==
 map <leader>c <c-_><c-_>
 nnoremap <leader>l :NumbersToggle<CR>
-nmap <leader>v :vsp<CR>
-nmap <leader>h :sp<CR>
+nmap <leader>v :vsp<CR>:CommandT<CR>
+nmap <leader>V V`]
+nmap <leader>h :sp<CR>:CommandT<CR>
 nmap <leader>g :Gbrowse<CR>
 
 " Remove empty lines
 nmap <leader>e :%s/\n\{3,}/\r\r/e<cr> :echoe "Empty lines removed!"<cr>
 
 " CSS Sorting
-nmap <Leader>s ?{<CR>jV}k!sortcss<CR>:noh<CR>
+nmap <Leader>s ?{<CR>jV}k:sort<CR>
 
 " Disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>

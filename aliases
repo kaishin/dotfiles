@@ -5,19 +5,17 @@ alias gi="gem install"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias ...="../.."
-alias drop-db="rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare"
-
-# Dribbble Feeds
-alias feed="cat ~/Dropbox/Inspiration/Inbox/feed.txt"
-alias feed-clear="rm ~/Dropbox/Inspiration/Inbox/feed.txt && touch ~/Dropbox/Inspiration/Inbox/feed.txt"
-alias dribbble-clear="rm ~/Dropbox/Inspiration/Dribbble/*"
+alias dropdb="rake db:drop:all && rake db:create:all && rake db:migrate && rake db:test:prepare"
 
 # Heroku Deploy
 alias deploy-staging="git push staging master && heroku run rake db:migrate --remote staging"
 
+alias zshrc="mvim ~/.zshrc"
+alias ohmyzsh="mvim ~/.oh-my-zsh"
+alias aliases="mvim ~/.aliases"
+
 # Git & Github
 alias g="git"
-alias github="hub"
 alias grb="git create-branch"
 alias gdb="git delete-branch"
 alias gpr="hub pull-request"

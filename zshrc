@@ -5,11 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
-
-# Aliases
-alias zshrc="mvim ~/.zshrc"
-alias ohmyzsh="mvim ~/.oh-my-zsh"
+ZSH_THEME="kaishin"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

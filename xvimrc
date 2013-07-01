@@ -1,8 +1,20 @@
-" Go back to normal mode with jk OR kj OR jj OR kk
-imap jj <Esc>jj
-imap kk <Esc>kk
-imap hh <Esc>hh
-
 " Remap Caps lock
 imap <C-a> <Esc>
 vmap <C-a> <Esc>
+
+" Case-insensitive searching.
+set ignorecase
+
+" But case-sensitive if expression contains a capital letter.
+set smartcase
+
+" Default to global substitutions on lines
+set gdefault
+
+" Use the system pasteboard
+set pasteboard
+
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h

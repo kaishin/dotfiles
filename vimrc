@@ -104,19 +104,19 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Github bundles
-Bundle 'EasyMotion'
-Bundle 'Shougo/neocomplcache'
-Bundle 'UltiSnips'
 Bundle 'danro/rename.vim'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'greplace.vim'
 Bundle 'hail2u/vim-css3-syntax'
-Bundle 'kaishin/scss-syntax.vim'
+Bundle 'henrik/vim-open-url'
+Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'myusuf3/numbers.vim'
 Bundle 'nono/jquery.vim'
 Bundle 'othree/html5.vim'
 Bundle 'rking/ag.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Shougo/neocomplcache'
 Bundle 'slim-template/vim-slim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-cucumber'
@@ -126,11 +126,15 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
+Bundle 'jtratner/vim-flavored-markdown'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'UltiSnips'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/Auto-Pairs'
 Bundle 'wincent/Command-T'
+Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
+" Bundle 'gerw/vim-HiLinkTrace'
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

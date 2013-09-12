@@ -39,3 +39,10 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 
 # Unfollow Twitter users who don't follow back
 alias unfollow="t leaders | xargs t unfollow"
+
+# Projects
+alias oculair="cd ~/Developer/iOS/oculair"
+alias verbena="cd ~/Developer/iOS/Verbena"
+alias neat-repo="cd ~/Developer/libs/neat"
+alias xcode="open -a 'Xcode5-DP6' ."
+alias kaishinlab="cd ~/Developer/web/kaishinlab"

@@ -15,23 +15,28 @@ set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 
-if has("autocmd")
-    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-    autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
-    autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+"==========================================================================
 
-    " Make jQuery omnicompletion work for javascript files
-    autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
-    autocmd BufRead *.json set ft=javascript
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType css,css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
-    " Enable spellchecking for Markdown
-    autocmd BufRead,BufNewFile *.md setlocal spell
+" Make jQuery omnicompletion work for javascript files
+autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
+autocmd BufRead *.json set ft=javascript
 
-    " Fold by indentation for Coffeescript
-    autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent nofoldenable
-    autocmd BufRead,BufNewFile *.css,*.scss setlocal foldmethod=marker foldmarker={,}
-endif
+" Markdown
+" autocmd BufRead,BufNewFile *.md,*.markdown,*.mkdn setlocal spell filetype=ghmarkdown
+
+" Indentation
+autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent nofoldenable
+autocmd BufRead,BufNewFile *.css,*.scss setlocal foldmethod=marker foldmarker={,}
+
+" Autoresize splits
+autocmd VimResized * :wincmd =
+
+"==========================================================================
 
 " Vim backups
 set nobackup

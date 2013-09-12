@@ -28,7 +28,7 @@
 [merge]
   tool = Kaleidoscope
 [color]
-  ui = always
+  ui = auto
 [case]
   ignorecase = false
 [web]

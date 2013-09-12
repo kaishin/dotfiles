@@ -1,12 +1,6 @@
 " Set Leader to <spacebar>
 let mapleader = " "
 
-" Go back to normal mode with jk OR kj OR jj OR kk
-imap jj <Esc>jj
-imap kk <Esc>kk
-imap hh <Esc>hh
-imap lll <Esc>lll
-
 " Remap Caps lock
 imap <C-a> <Esc>
 vmap <C-a> <Esc>
@@ -15,27 +9,34 @@ vmap <C-a> <Esc>
 nmap <return> :
 
 " Handy shortcuts
-nmap <Leader>n :NERDTreeToggle<cr>
-nmap <Leader>t :CommandT<cr>
-nmap <Leader>b :CommandTBuffer<cr>
-nmap <Leader>f :CommandTFlush<cr>
-nmap <Leader>p :UltiSnipsEdit<cr>
-nmap <Leader>r :tabe $MYVIMRC<cr>:vsp $HOME/.vim/vimrc/mappings.vim<cr>
-nmap <leader>u :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
-nmap <leader>i ==
-vmap <leader>i ==
 map <leader>c <c-_><c-_>
-nnoremap <leader>l :NumbersToggle<CR>
-nmap <leader>v :vsp<CR>:CommandT<CR>
-nmap <leader>V V`]
-nmap <leader>h :sp<CR>:CommandT<CR>
-nmap <leader>g :Gbrowse<CR>
-
-" Remove empty lines
+nmap <C-a> <C-w>>
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <C-s> <C-w><
+nmap <C-q> <C-w>-
+nmap <C-z> <C-w>+
+nmap <leader>b :sp<CR>
 nmap <leader>e :%s/\n\{3,}/\r\r/e<cr> :echoe "Empty lines removed!"<cr>
-
-" CSS Sorting
+nmap <Leader>f :CommandTFlush<cr>
+nmap <leader>G :Gbrowse<CR>
+nmap <leader>i ==
+nmap <Leader>n :NERDTreeToggle<cr>
+nmap <Leader>R :tabe $MYVIMRC<cr>:vsp $HOME/.vim/vimrc/mappings.vim<cr>
+nmap <leader>r :vsp<CR>
+nmap <leader>S :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
 nmap <Leader>s ?{<CR>jV}k:sort<CR>
+nmap <Leader>t :CommandT<cr>
+nmap <Leader>U :UltiSnipsEdit<cr>
+nmap <leader>V V`]
+nmap <leader>z za
+vmap <leader>' :s/"/'/g<cr>
+nnoremap <leader>= <C-w>=
+nnoremap <leader>l :NumbersToggle<CR>
+nnoremap <leader>M :let &scrolloff=999-&scrolloff<cr>
+vmap <leader>i ==
 
 " Disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>

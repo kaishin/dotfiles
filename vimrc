@@ -6,6 +6,9 @@ source $HOME/.vim/vimrc/commands.vim
 set guioptions=egmrt
 set guioptions-=r
 
+" Disable mouse
+set mouse=""
+
 " Look & Feel
 colorscheme tomorrow-night
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13

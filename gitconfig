@@ -4,12 +4,15 @@
 [core]
   excludesfile = /Users/reda/.gitignore
   editor = mvim -f
+  quotepath = false
 [mergetool]
 	keepBackup = false
   prompt = false
 [alias]
   co = !git checkout
   c = commit -m
+  aa = add --all
+  ca = commit --amend
 [push]
   default = tracking
 [format]

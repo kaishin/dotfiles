@@ -27,11 +27,14 @@ nnoremap <Space>c :xccmd commentAndUncommentCurrentLines<CR>
 nnoremap <Space>e :xccmd toggleTokenizedEditing<CR>
 
 " Open quickly
-nnoremap <Space>f :xccmd openQuickly<CR>
+nnoremap <Space>t :xccmd openQuickly<CR>
 
 " Open & close assistant
-nnoremap <Space>v <C-w>n
+nnoremap <Space>v <C-w>n :xccmd openQuickly<CR>
 nnoremap <Space>w <C-w>q
 
 " Indent selection
 nnoremap <Space>i ==
+
+" Open navigator
+nnoremap <Space>n :xccmd toggleNavigatorsVisibility<CR>

@@ -79,7 +79,7 @@ let g:UltiSnipsExpandTrigger = '<c-z>'
 let g:UltiSnipsJumpForwardTrigger = '<c-z>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-s>'
 let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsSnippetDirectories = [ 'UltiSnips', 'snippets' ]
+let g:UltiSnipsSnippetDirectories = [ 'snippets' ]
 let g:UltiSnipsSnippetsDir = '~/.vim/snippets'
 
 " CommandT options

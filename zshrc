@@ -36,3 +36,6 @@ export VISUAL=/usr/local/bin/mvim
 
 # Use default Ruby in each new session
 rvm use >/dev/null
+
+# No idea what this does, but Mike asked me to add it
+unsetopt nomatch

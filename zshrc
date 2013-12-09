@@ -21,9 +21,9 @@ export PATH=/usr/local/bin:$PATH
 export WORKON_HOME=$HOME/.virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
-#virtualenv shell script
-source /usr/local/share/python/virtualenvwrapper.sh
 
+#virtualenv shell script
+# source /usr/local/share/python/virtualenvwrapper.sh
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 

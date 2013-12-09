@@ -11,9 +11,6 @@ set smartcase
 " Default to global substitutions on lines
 set gdefault
 
-" Use the system pasteboard
-set pasteboard
-
 " Move between assistant editors
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k

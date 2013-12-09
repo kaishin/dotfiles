@@ -49,3 +49,9 @@ alias verbena="cd ~/Developer/iOS/Verbena"
 alias neat-repo="cd ~/Developer/libs/neat"
 alias xcode="open -a 'Xcode5-DP6' ."
 alias kaishinlab="cd ~/Developer/web/kaishinlab"
+
+# Bower
+alias bower='noglob bower'
+
+# Pow
+alias pow='powder'

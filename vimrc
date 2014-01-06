@@ -160,9 +160,11 @@ Bundle 'vim-scripts/Auto-Pairs'
 Bundle 'ctrlp.vim'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
-" Bundle 'gerw/vim-HiLinkTrace'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mattn/emmet-vim'
+Bundle 'dag/vim-fish'
+Bundle 'justinmk/vim-sneak'
+Bundle 'pbrisbin/vim-mkdir'
 
 filetype plugin indent on
 

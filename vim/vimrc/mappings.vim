@@ -20,7 +20,6 @@ nmap <C-q> <C-w>-
 nmap <C-z> <C-w>+
 nmap <leader>b :sp<CR>
 nmap <leader>e :%s/\n\{3,}/\r\r/e<cr> :echoe "Empty lines removed!"<cr>
-nmap <Leader>f :CommandTFlush<cr>
 nmap <leader>G :Gbrowse<CR>
 nmap <leader>i ==
 nmap <Leader>n :NERDTreeToggle<cr>
@@ -28,15 +27,16 @@ nmap <Leader>R :tabe $MYVIMRC<cr>:vsp $HOME/.vim/vimrc/mappings.vim<cr>
 nmap <leader>r :vsp<CR>
 nmap <leader>S :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
 nmap <Leader>s ?{<CR>jV}k:sort<CR>
-nmap <Leader>t :CommandT<cr>
+nmap <Leader>t :CtrlP<cr>
 nmap <Leader>U :UltiSnipsEdit<cr>
 nmap <leader>V V`]
 nmap <leader>z za
-vmap <leader>' :s/"/'/g<cr>
+nmap <leader>' :%s/"/'/g<cr>
 nnoremap <leader>= <C-w>=
 nnoremap <leader>l :NumbersToggle<CR>
-nnoremap <leader>M :let &scrolloff=999-&scrolloff<cr>
+nnoremap <leader>T :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 vmap <leader>i ==
+nnoremap Q <nop>
 
 " Disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>

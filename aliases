@@ -27,6 +27,9 @@ alias ghco="hub checkout"
 alias ghb="hub browse"
 alias gres="git reset --hard && git clean -f -d"
 alias glog="git log --pretty=format:%s"
+# Bundler
+alias bi="bundle install"
+alias bu="bundle update"
 
 # Nearlyfreespeech
 alias sshnfs="ssh kaishin_kaishinlab@ssh.phx.nearlyfreespeech.net"

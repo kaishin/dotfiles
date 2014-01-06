@@ -1,12 +1,33 @@
 extends neat
 
 snippet im "@import" !b
-@import "${1}";
-${2}
+@import '${1}';
+endsnippet
+
+snippet ex "@extend" !b
+@extend ${1};
 endsnippet
 
 snippet in "@include" !b
 @include ${1}${2:(${3})}$0;${4}
+endsnippet
+
+snippet before ":before pseudo element" !b
+&:before {
+  @include size(${1});
+  content: '';
+  display: block;
+  position: absolute;
+}
+endsnippet
+
+snippet after ":after pseudo element" !b
+&:after {
+  @include size(${1});
+  content: '';
+  display: block;
+  position: absolute;
+}
 endsnippet
 
 snippet dkn "Darken color"
@@ -499,22 +520,10 @@ snippet co "content: ''"
 content: ''
 endsnippet
 
-snippet us "user-select"
-+user-select(${1:none|text|toggle|element|elements|all})
-endsnippet
-
-snippet usn "user-select: none"
-+user-select(none)
-endsnippet
-
-snippet ust "user-select: text"
-+user-select(text)
-endsnippet
-
-snippet usa "user-select: all"
-+user-select(all)
-endsnippet
-
 snippet ls "letter-spacing"
 letter-spacing: ${1:0}
+endsnippet
+
+snippet bdr "Border radius" !b
+border-radius: $base-border-radius${1};${2}
 endsnippet

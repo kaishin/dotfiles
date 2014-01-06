@@ -208,6 +208,18 @@ snippet article "<article>"
 </article>
 endsnippet
 
+snippet hd "<header>"
+<header>
+  $0
+</header>
+endsnippet
+
+snippet ft "<footer>"
+<footer>
+  $0
+</footer>
+endsnippet
+
 snippet img "<img>"
 <img src="${1:http://placehold.it/200}" />${2}
 endsnippet
@@ -216,3 +228,6 @@ snippet < "Any HTML element"
 <$1>${2}</$1>
 endsnippet
 
+snippet button
+<button ${1:class="${2:class-name}"} type="button">${3}</button>
+endsnippet

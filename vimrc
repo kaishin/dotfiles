@@ -213,9 +213,9 @@ if filereadable(".vimrc.local")
   source .vimrc.local
 endif
 
-" Use Ack instead of Grep when available
-if executable("ack")
-  set grepprg=ack\ -H\ --nogroup\ --nocolor
+" Use Ag instead of Grep when available
+if executable("ag")
+    set grepprg=ag\ --nogroup\ --nocolor
 endif
 
 " Numbers

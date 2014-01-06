@@ -41,7 +41,7 @@ alias tower="gittower"
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 # Unfollow Twitter users who don't follow back
-alias unfollow="t leaders | xargs t unfollow"
+alias unfollow="t leaders | xargs t unfollow >/dev/null"
 
 # Projects
 alias oculair="cd ~/Developer/iOS/oculair"

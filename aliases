@@ -47,7 +47,7 @@ alias unfollow="t leaders | xargs t unfollow"
 alias oculair="cd ~/Developer/iOS/oculair"
 alias verbena="cd ~/Developer/iOS/Verbena"
 alias neat-repo="cd ~/Developer/libs/neat"
-alias xcode="open -a 'Xcode5-DP6' ."
+alias xcode="open -a 'Xcode' ."
 alias kaishinlab="cd ~/Developer/web/kaishinlab"
 
 # Bower

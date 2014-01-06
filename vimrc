@@ -24,6 +24,7 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 " Make jQuery omnicompletion work for javascript files
 autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
+autocmd BufNewFile,BufRead *.slim set ft=slim syntax=slim
 autocmd BufRead *.json set ft=javascript
 
 " Markdown

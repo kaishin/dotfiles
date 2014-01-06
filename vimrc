@@ -101,6 +101,10 @@ if executable("ag")
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+" Git-gutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+"
 " Emmet
 let g:use_emmet_complete_tag = 1
 let g:user_emmet_leader_key = '<c-y>'
@@ -157,6 +161,7 @@ Bundle 'ctrlp.vim'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
 " Bundle 'gerw/vim-HiLinkTrace'
+Bundle 'airblade/vim-gitgutter'
 Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on

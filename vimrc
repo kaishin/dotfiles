@@ -115,6 +115,8 @@ set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*.avi,*.wmv,*.ogg,*.mp3,*.mov
 
 "========================================================= VUNDLE
+filetype off
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -152,6 +154,8 @@ Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
 " Bundle 'gerw/vim-HiLinkTrace'
 
+filetype plugin indent on
+
 " ======================================================== THOUGHTBOT DEFAULTS
 
 set nocompatible  " Use Vim settings, rather then Vi settings
@@ -168,8 +172,6 @@ set laststatus=2  " Always display the status line
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
-
-filetype plugin indent on
 
 augroup vimrcEx
   au!

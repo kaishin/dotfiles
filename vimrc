@@ -89,8 +89,17 @@ let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsSnippetDirectories = [ 'snippets' ]
 let g:UltiSnipsSnippetsDir = '~/.vim/snippets'
 
-" CommandT options
-let g:CommandTMaxHeight = 10
+" CtrlP options
+let g:ctrlp_max_height = 10
+let g:ctrlp_cache_dir = '~/.vim/ctrlp-cache'
+let g:ctrlp_open_multi = '2v'
+let g:ctrlp_custom_ignore = { 'dir': 'tmp' }
+let g:ctrlp_use_caching = 0
+
+" Make CtrlP use ag (if it is present) for listing the files.
+if executable("ag")
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 " Ignore these files
 set wildignore+=*.sw?
@@ -138,7 +147,7 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'UltiSnips'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/Auto-Pairs'
-Bundle 'wincent/Command-T'
+Bundle 'ctrlp.vim'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
 " Bundle 'gerw/vim-HiLinkTrace'

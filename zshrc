@@ -1,17 +1,9 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="kaishin"
-
 # Aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
 COMPLETION_WAITING_DOTS="true"
-
-# List of default plugins: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-plugins=(git brew gem git-extras bundler Forklift bower npm osx evm)
-
-source $ZSH/oh-my-zsh.sh
 
 export PATH=/usr/X11/bin:/usr/local/git/bin:/usr/local/heroku/bin:/usr/local/share/python:$PATH
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH

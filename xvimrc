@@ -21,9 +21,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <Space>c :xccmd commentAndUncommentCurrentLines<CR>
 vnoremap <Space>c :xccmd commentAndUncommentCurrentLines<CR>
 
-" Edit in scope
-nnoremap <Space>e :xccmd toggleTokenizedEditing<CR>
-
 " Open quickly
 nnoremap <Space>t :xccmd openQuickly<CR>
 

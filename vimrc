@@ -15,7 +15,7 @@ set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 
-"==========================================================================
+"========================================================================== AUTOCOMMAND
 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS

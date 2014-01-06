@@ -26,6 +26,9 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
 autocmd BufNewFile,BufRead *.slim set ft=slim syntax=slim
 autocmd BufRead *.json set ft=javascript
+"
+" CocoaPods
+autocmd BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
 
 " Markdown
 " autocmd BufRead,BufNewFile *.md,*.markdown,*.mkdn setlocal spell filetype=ghmarkdown

@@ -31,7 +31,7 @@ autocmd BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
 
 " Markdown
-" autocmd BufRead,BufNewFile *.md,*.markdown,*.mkdn setlocal spell filetype=ghmarkdown
+autocmd BufRead,BufNewFile *.md,*.markdown,*.mkdn setlocal spell filetype=ghmarkdown
 
 " Indentation
 autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent nofoldenable

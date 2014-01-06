@@ -101,6 +101,10 @@ if executable("ag")
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+" Emmet
+let g:use_emmet_complete_tag = 1
+let g:user_emmet_leader_key = '<c-y>'
+
 " Ignore these files
 set wildignore+=*.sw?
 set wildignore+=.git,.svn
@@ -153,6 +157,7 @@ Bundle 'ctrlp.vim'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
 " Bundle 'gerw/vim-HiLinkTrace'
+Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on
 

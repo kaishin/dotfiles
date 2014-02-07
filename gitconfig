@@ -36,3 +36,5 @@
   ignorecase = false
 [web]
   browser = open
+[gitsh]
+  prompt = "🐹  %D %c%b%w(%c%#%w)"

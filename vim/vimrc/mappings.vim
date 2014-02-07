@@ -38,6 +38,11 @@ nnoremap <leader>T :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 vmap <leader>i ==
 nnoremap Q <nop>
 
+" Sneak Mappings
+nmap K <Plug>SneakForward
+nmap <leader> <Plug>SneakNext
+nmap <bs> <Plug>SneakPrevious
+
 " Disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>

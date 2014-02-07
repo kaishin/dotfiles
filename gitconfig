@@ -13,6 +13,8 @@
   c = commit -m
   aa = add --all
   ca = commit --amend
+  nix = reset --hard
+  wipe = clean -f -d
 [push]
   default = tracking
 [format]

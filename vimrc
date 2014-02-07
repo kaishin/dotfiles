@@ -2,6 +2,52 @@ source $HOME/.vim/vimrc/mappings.vim
 source $HOME/.vim/vimrc/autoload.vim
 source $HOME/.vim/vimrc/commands.vim
 
+"========================================================= VUNDLE
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" Github bundles
+Bundle 'danro/rename.vim'
+Bundle 'greplace.vim'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'henrik/vim-open-url'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'myusuf3/numbers.vim'
+Bundle 'nono/jquery.vim'
+Bundle 'othree/html5.vim'
+Bundle 'rking/ag.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Shougo/neocomplcache'
+Bundle 'slim-template/vim-slim'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'jtratner/vim-flavored-markdown'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'UltiSnips'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/Auto-Pairs'
+Bundle 'ctrlp.vim'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-session'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'mattn/emmet-vim'
+Bundle 'dag/vim-fish'
+Bundle 'justinmk/vim-sneak'
+Bundle 'pbrisbin/vim-mkdir'
+
+filetype plugin indent on
+
 " Hide that butt-ugly toolbar
 set guioptions=egmrt
 set guioptions-=r
@@ -16,17 +62,16 @@ let Powerline_symbols = 'compatible'
 let g:Powerline_symbols = 'fancy'
 
 "========================================================================== AUTOCOMMAND
+autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
+autocmd BufNewFile,BufRead *.slim set ft=slim syntax=slim
+autocmd BufNewFile,BufRead *.scss set ft=scss syntax=scss
+autocmd BufRead *.json set ft=javascript
 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType css,css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
-" Make jQuery omnicompletion work for javascript files
-autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
-autocmd BufNewFile,BufRead *.slim set ft=slim syntax=slim
-autocmd BufRead *.json set ft=javascript
-"
 " CocoaPods
 autocmd BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
 
@@ -34,7 +79,7 @@ autocmd BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
 autocmd BufRead,BufNewFile *.md,*.markdown,*.mkdn setlocal spell filetype=ghmarkdown
 
 " Indentation
-autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent nofoldenable
+autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent
 autocmd BufRead,BufNewFile *.css,*.scss setlocal foldmethod=marker foldmarker={,}
 
 " Autoresize splits
@@ -122,51 +167,6 @@ set wildignore+=log/**,tmp/**,cache/**,vendor/**
 set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*.avi,*.wmv,*.ogg,*.mp3,*.mov
 
-"========================================================= VUNDLE
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-
-" Github bundles
-Bundle 'danro/rename.vim'
-Bundle 'greplace.vim'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'henrik/vim-open-url'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'myusuf3/numbers.vim'
-Bundle 'nono/jquery.vim'
-Bundle 'othree/html5.vim'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Shougo/neocomplcache'
-Bundle 'slim-template/vim-slim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'jtratner/vim-flavored-markdown'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'UltiSnips'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/Auto-Pairs'
-Bundle 'ctrlp.vim'
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-session'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'mattn/emmet-vim'
-Bundle 'dag/vim-fish'
-Bundle 'justinmk/vim-sneak'
-Bundle 'pbrisbin/vim-mkdir'
-
-filetype plugin indent on
 
 " ======================================================== THOUGHTBOT DEFAULTS
 

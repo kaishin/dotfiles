@@ -46,6 +46,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'dag/vim-fish'
 Bundle 'justinmk/vim-sneak'
 Bundle 'pbrisbin/vim-mkdir'
+Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'mustache/vim-mustache-handlebars'
 
 " Scala

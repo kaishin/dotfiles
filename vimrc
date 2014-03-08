@@ -46,6 +46,8 @@ Bundle 'mattn/emmet-vim'
 Bundle 'dag/vim-fish'
 Bundle 'justinmk/vim-sneak'
 Bundle 'pbrisbin/vim-mkdir'
+" Scala
+Bundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on
 
@@ -119,6 +121,9 @@ command! -complete=file -nargs=1 Remove :echo 'Remove: '.'<f-args>'.' '.(delete(
 " Disable session auto-save and auto-load
 let g:session_autosave = 'yes'
 let g:session_autoload = 'no'
+
+" Vim-scala
+let g:scala_sort_across_groups = 1
 
 " Neocomplcache options
 let g:neocomplcache_enable_at_startup = 1

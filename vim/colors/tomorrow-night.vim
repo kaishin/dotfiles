@@ -17,6 +17,9 @@ let s:aqua = "8abeb7"
 let s:blue = "81a2be"
 let s:purple = "b294bb"
 let s:window = "4d5057"
+let s:white = "ffffff"
+let s:black = "000000"
+let s:mustard = "ed9762"
 
 " Console 256 Colours
 if !has("gui_running")
@@ -245,7 +248,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("LineNr", s:selection, "", "")
   call <SID>X("NonText", s:selection, "", "")
   call <SID>X("SpecialKey", s:selection, "", "")
-  call <SID>X("Search", s:background, s:yellow, "")
+  call <SID>X("Search", s:white, s:selection, "")
   call <SID>X("TabLine", s:foreground, s:background, "reverse")
   call <SID>X("StatusLine", s:window, s:yellow, "reverse")
   call <SID>X("StatusLineNC", s:window, s:foreground, "reverse")

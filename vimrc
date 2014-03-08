@@ -58,6 +58,9 @@ set guioptions-=r
 " Disable mouse
 set mouse=""
 
+" highlight Search
+set hlsearch
+
 " Look & Feel
 colorscheme tomorrow-night
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13

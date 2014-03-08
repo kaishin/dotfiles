@@ -46,6 +46,8 @@ Bundle 'mattn/emmet-vim'
 Bundle 'dag/vim-fish'
 Bundle 'justinmk/vim-sneak'
 Bundle 'pbrisbin/vim-mkdir'
+Bundle 'mustache/vim-mustache-handlebars'
+
 " Scala
 Bundle 'derekwyatt/vim-scala'
 
@@ -70,6 +72,7 @@ let g:Powerline_symbols = 'fancy'
 "========================================================================== AUTOCOMMAND
 autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
 autocmd BufNewFile,BufRead *.slim set ft=slim syntax=slim
+autocmd BufNewFile,BufRead *.hbs set ft=mustache syntax=mustache
 autocmd BufNewFile,BufRead *.scss set ft=scss syntax=scss
 autocmd BufRead *.json set ft=javascript
 

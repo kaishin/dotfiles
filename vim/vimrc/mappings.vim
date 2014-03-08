@@ -39,7 +39,8 @@ vmap <leader>i ==
 nnoremap Q <nop>
 
 " Sneak Mappings
-nmap K <Plug>SneakForward
+nmap , <Plug>SneakForward
+nmap K <Plug>SneakBackward
 nmap <leader> <Plug>SneakNext
 nmap <bs> <Plug>SneakPrevious
 

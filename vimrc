@@ -103,6 +103,9 @@ set cursorcolumn
 set splitbelow
 set splitright
 
+" Vim Sneak
+hi link SneakPluginTarget Search
+
 " Autoload changed files
 set autoread
 

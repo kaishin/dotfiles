@@ -13,9 +13,9 @@ alias grm "git rebase master"
 alias sshnfs "ssh kaishin_kaishinlab@ssh.phx.nearlyfreespeech.net"
 alias rsync "/usr/local/bin/rsync"
 alias tower "gittower"
-alias fixopenwith '/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias fixopenwith '/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
 alias unfollow "t leaders | xargs t unfollow >/dev/null"
-alias oculair "cd ~/Developer/iOS/oculair | xcode | gitsh"
+alias oculair "cd ~/Developer/iOS/oculair"
 alias verbena "cd ~/Developer/iOS/Verbena | xcode"
 alias ios-playground "cd ~/Developer/iOS/Playground | xcode"
 alias neat-repo "cd ~/Developer/libs/neat"

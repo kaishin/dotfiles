@@ -9,11 +9,25 @@
   keepBackup = false
   prompt = false
 [alias]
-  co = !git checkout
-  c = commit -m
   aa = add --all
+  b = browse
+  c = commit -m
   ca = commit --amend
+  co = checkout
+  dt = difftool
+  db = delete-branch
+  cb = create-branch
+  f = fetch
+  mt = mergetool
   nix = reset --hard
+  pf = push -f
+  pr = pull-request
+  pop = stash pop
+  prb = pull --rebase
+  ra = rebase --abort
+  rc = rebase --continue
+  rim = rebase -i master
+  rm = rebase master
   wipe = clean -f -d
 [push]
   default = current
@@ -39,7 +53,7 @@
 [web]
   browser = open
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
 [gitsh]
   prompt = "🐹  %D %c%b%w(%c%#%w)"

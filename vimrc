@@ -9,14 +9,16 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-" Github bundles
+" General
 Bundle 'danro/rename.vim'
 Bundle 'greplace.vim'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" Web Design
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'henrik/vim-open-url'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'myusuf3/numbers.vim'
 Bundle 'nono/jquery.vim'
 Bundle 'othree/html5.vim'

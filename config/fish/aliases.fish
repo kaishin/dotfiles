@@ -3,12 +3,9 @@ alias mkdir "mkdir -p"
 alias ... "../.."
 alias aliases "mvim ~/.config/fish/aliases.fish"
 alias gco "git checkout"
-alias ghb "hub browse"
-alias ghco "hub checkout"
 alias gmt "git mergetool"
 alias gpf "git push -f"
 alias gpl "git pull --rebase"
-alias gpr "hub pull-request"
 alias gra "git rebase --abort"
 alias grc "git rebase --continue"
 alias grim "git rebase -i master"
@@ -26,4 +23,6 @@ alias xcode "open -a 'Xcode' ."
 alias kaishinlab "cd ~/Developer/web/kaishinlab"
 alias bower 'bower'
 alias pow 'powder'
+alias gs 'gitsh --git (which gh)'
+alias git 'gh'
 alias rsa 'cat ~/.ssh/id_rsa.pub | pbcopy'

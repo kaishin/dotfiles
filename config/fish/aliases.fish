@@ -26,3 +26,4 @@ alias xcode "open -a 'Xcode' ."
 alias kaishinlab "cd ~/Developer/web/kaishinlab"
 alias bower 'bower'
 alias pow 'powder'
+alias rsa 'cat ~/.ssh/id_rsa.pub | pbcopy'

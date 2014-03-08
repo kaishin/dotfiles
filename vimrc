@@ -76,7 +76,7 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 autocmd BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
 
 " Markdown
-autocmd BufRead,BufNewFile *.md,*.markdown,*.mkdn setlocal spell filetype=ghmarkdown
+autocmd BufRead,BufNewFile *.md,*.markdown,*.mkdn setlocal spell filetype=ghmarkdown textwidth=80
 
 " Indentation
 autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent

@@ -16,7 +16,7 @@
   nix = reset --hard
   wipe = clean -f -d
 [push]
-  default = tracking
+  default = current
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [github]

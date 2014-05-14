@@ -147,8 +147,7 @@ let g:UltiSnipsExpandTrigger = '<c-z>'
 let g:UltiSnipsJumpForwardTrigger = '<c-z>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-s>'
 let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsSnippetDirectories = [ 'snippets' ]
-let g:UltiSnipsSnippetsDir = '~/.vim/snippets'
+let g:UltiSnipsSnippetDirectories = [ 'ulti-snippets' ]
 
 " CtrlP options
 let g:ctrlp_max_height = 10

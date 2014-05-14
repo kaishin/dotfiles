@@ -28,6 +28,7 @@ nmap <leader>r :vsp<CR>
 nmap <leader>S :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
 nmap <Leader>s ?{<CR>jV}k:sort<CR>
 nmap <Leader>t :CtrlP<cr>
+nmap <Leader>q gqip
 nmap <Leader>U :UltiSnipsEdit<cr>
 nmap <leader>V V`]
 nmap <leader>z za

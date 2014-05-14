@@ -57,3 +57,4 @@
   smudge = git-media-smudge %f
 [gitsh]
   prompt = "🐹  %D %c%b%w(%c%#%w)"
+  nogreeting = true

@@ -13,4 +13,4 @@ set -x PATH /usr/local/bin $PATH
 set -x EDITOR /usr/local/bin/mvim
 set -x VISUAL /usr/local/bin/mvim
 
-rvm use >/dev/null
+rvm use default >/dev/null

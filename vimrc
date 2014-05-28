@@ -97,6 +97,9 @@ autocmd VimResized * :wincmd =
 
 "==========================================================================
 
+" Auto refresh browser
+let g:RefreshRunningBrowserDefault = 'chrome'
+
 " Vim backups
 set nobackup
 set nowritebackup

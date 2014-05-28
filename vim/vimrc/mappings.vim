@@ -15,29 +15,30 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-nmap <C-s> <C-w><
 nmap <C-q> <C-w>-
+nmap <C-s> <C-w><
 nmap <C-z> <C-w>+
-nmap <leader>b :sp<CR>
-nmap <leader>e :%s/\n\{3,}/\r\r/e<cr> :echoe "Empty lines removed!"<cr>
-nmap <leader>G :Gbrowse<CR>
-nmap <leader>i ==
-nmap <Leader>n :NERDTreeToggle<cr>
-nmap <Leader>R :tabe $MYVIMRC<cr>:vsp $HOME/.vim/vimrc/mappings.vim<cr>
-nmap <leader>r :vsp<CR>
-nmap <leader>S :source $MYVIMRC<cr> :echoe "vimrc sourced!"<cr>
-nmap <Leader>s ?{<CR>jV}k:sort<CR>
-nmap <Leader>t :CtrlP<cr>
+nmap <Leader>R :tabe $MYVIMRC<CR>:vsp $HOME/.vim/vimrc/mappings.vim<CR>
+nmap <Leader>U :UltiSnipsEdit<CR>
+nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>q gqip
-nmap <Leader>U :UltiSnipsEdit<cr>
+nmap <Leader>s ?{<CR>jV}k:sort<CR>
+nmap <Leader>t :CtrlP<CR>
+nmap <leader>' :%s/"/'/g<CR>
+nmap <leader>G :Gbrowse<CR>
+nmap <leader>S :source $MYVIMRC<CR> :echoe "vimrc sourced!"<CR>
 nmap <leader>V V`]
+nmap <leader>b :sp<CR>
+nmap <leader>e :%s/\n\{3,}/\r\r/e<CR> :echoe "Empty lines removed!"<CR>
+nmap <leader>i ==
+nmap <leader>v :vsp<CR>
 nmap <leader>z za
-nmap <leader>' :%s/"/'/g<cr>
 nnoremap <leader>= <C-w>=
-nnoremap <leader>l :NumbersToggle<CR>
 nnoremap <leader>T :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-vmap <leader>i ==
+nnoremap <leader>r :wa<CR> :RRB<CR>
+nnoremap <leader>L :NumbersToggle<CR>
 nnoremap Q <nop>
+vmap <leader>i ==
 
 " Sneak Mappings
 nmap , <Plug>SneakForward

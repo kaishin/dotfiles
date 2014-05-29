@@ -1,59 +1,7 @@
 source $HOME/.vim/vimrc/mappings.vim
 source $HOME/.vim/vimrc/autoload.vim
 source $HOME/.vim/vimrc/commands.vim
-
-"========================================================= VUNDLE
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-
-" General
-Bundle 'danro/rename.vim'
-Bundle 'greplace.vim'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-" Web Design
-Bundle 'Shougo/neocomplcache'
-Bundle 'UltiSnips'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'ctrlp.vim'
-Bundle 'dag/vim-fish'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'henrik/vim-open-url'
-Bundle 'jtratner/vim-flavored-markdown'
-Bundle 'justinmk/vim-sneak'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'mattn/emmet-vim'
-Bundle 'mkitt/browser-refresh.vim'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'nono/jquery.vim'
-Bundle 'othree/html5.vim'
-Bundle 'othree/xml.vim'
-Bundle 'pbrisbin/vim-mkdir'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'slim-template/vim-slim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/Auto-Pairs'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'vim-scripts/svg.vim'
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-session'
-
-" Scala
-Bundle 'derekwyatt/vim-scala'
+source $HOME/.vim/vimrc/plugins.vim
 
 filetype plugin indent on
 
@@ -191,7 +139,6 @@ set wildignore+=*.avi,*.wmv,*.ogg,*.mp3,*.mov
 
 " ======================================================== THOUGHTBOT DEFAULTS
 
-set nocompatible  " Use Vim settings, rather then Vi settings
 " set nobackup
 " set nowritebackup
 set history=50

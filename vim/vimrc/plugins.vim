@@ -1,0 +1,49 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'danro/rename.vim'
+Plugin 'greplace.vim'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Shougo/neocomplcache'
+Plugin 'UltiSnips'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'ctrlp.vim'
+Plugin 'dag/vim-fish'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'henrik/vim-open-url'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'justinmk/vim-sneak'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'mattn/emmet-vim'
+Plugin 'mkitt/browser-refresh.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nono/jquery.vim'
+Plugin 'othree/html5.vim'
+Plugin 'othree/xml.vim'
+Plugin 'pbrisbin/vim-mkdir'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'slim-template/vim-slim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/Auto-Pairs'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/svg.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+Plugin 'derekwyatt/vim-scala'
+
+call vundle#end()

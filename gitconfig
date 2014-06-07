@@ -65,3 +65,5 @@
 [gitsh]
   prompt = "🐹  %D %c%b%w(%c%#%w)"
   nogreeting = true
+[pull]
+  rebase = true

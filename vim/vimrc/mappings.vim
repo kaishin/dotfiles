@@ -18,15 +18,16 @@ nmap <C-l> <C-w>l
 nmap <C-q> <C-w>-
 nmap <C-s> <C-w><
 nmap <C-z> <C-w>+
-nmap <Leader>R :tabe $MYVIMRC<CR>:vsp $HOME/.vim/vimrc/mappings.vim<CR>
+nmap <Leader>R :tabe $MYVIMRC<CR>:vsp $HOME/.vim/vimrc/mappings.vim<CR>:sp $HOME/.vim/vimrc/plugins.vim<CR>
+
 nmap <Leader>U :UltiSnipsEdit<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>q gqip
 nmap <Leader>s ?{<CR>jV}k:sort<CR>
 nmap <Leader>t :CtrlP<CR>
+nmap <Leader>T :CtrlPBuffer<CR>
 nmap <leader>' :%s/"/'/g<CR>
 nmap <leader>G :Gbrowse<CR>
-nmap <leader>S :source $MYVIMRC<CR> :echoe "vimrc sourced!"<CR>
 nmap <leader>V V`]
 nmap <leader>b :sp<CR>
 nmap <leader>e :%s/\n\{3,}/\r\r/e<CR> :echoe "Empty lines removed!"<CR>
@@ -34,11 +35,12 @@ nmap <leader>i ==
 nmap <leader>v :vsp<CR>
 nmap <leader>z za
 nnoremap <leader>= <C-w>=
-nnoremap <leader>T :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap <leader>P :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap <leader>r :wa<CR> :RRB<CR>
 nnoremap <leader>L :NumbersToggle<CR>
 nnoremap Q <nop>
 vmap <leader>i ==
+nmap <leader>W :call Wipeout()<CR>
 
 " Sneak Mappings
 nmap , <Plug>SneakForward

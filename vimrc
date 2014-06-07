@@ -5,10 +5,6 @@ source $HOME/.vim/vimrc/plugins.vim
 
 filetype plugin indent on
 
-" Hide that butt-ugly toolbar
-set guioptions=egmrt
-set guioptions-=r
-
 " Disable mouse
 set mouse=""
 
@@ -17,9 +13,10 @@ set hlsearch
 
 " Look & Feel
 colorscheme tomorrow-night
-set guifont=Source\ Code\ Pro\ for\ Powerline:h13
-let Powerline_symbols = 'compatible'
-let g:Powerline_symbols = 'fancy'
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 "========================================================================== AUTOCOMMAND
 autocmd BufNewFile,BufRead jquery.*.js set ft=javascript syntax=jquery
@@ -50,6 +47,7 @@ autocmd VimResized * :wincmd =
 
 " Auto refresh browser
 let g:RefreshRunningBrowserDefault = 'chrome'
+let g:RefreshRunningBrowserReturnFocus = 1
 
 " Vim backups
 set nobackup
@@ -86,15 +84,13 @@ let g:session_autoload = 'no'
 " Vim-scala
 let g:scala_sort_across_groups = 1
 
-" Neocomplcache options
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_max_list = 10
-let g:neocomplcache_auto_completion_start_length = 3
-let g:neocomplcache_force_overwrite_completefunc = 1
+" Neocomplete options
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#max_list = 10
+let g:neocomplete#auto_completion_start_length = 3
+let g:neocomplete#force_overwrite_completefunc = 1
 
 " UltiSnips options
 let g:UltiSnipsExpandTrigger = '<c-z>'
@@ -135,7 +131,6 @@ set wildignore+=*.gem
 set wildignore+=log/**,tmp/**,cache/**,vendor/**
 set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*.avi,*.wmv,*.ogg,*.mp3,*.mov
-
 
 " ======================================================== THOUGHTBOT DEFAULTS
 
@@ -206,3 +201,37 @@ autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=rou
 
 " Treat <li> and <p> tags like the block tags they are
 " let g:html_indent_tags = 'li\|p'
+
+" Functions
+function! Wipeout()
+  " list of *all* buffer numbers
+  let l:buffers = range(1, bufnr('$'))
+
+  " what tab page are we in?
+  let l:currentTab = tabpagenr()
+  try
+    " go through all tab pages
+    let l:tab = 0
+    while l:tab < tabpagenr('$')
+      let l:tab += 1
+
+      " go through all windows
+      let l:win = 0
+      while l:win < winnr('$')
+        let l:win += 1
+        " whatever buffer is in this window in this tab, remove it from
+        " l:buffers list
+        let l:thisbuf = winbufnr(l:win)
+        call remove(l:buffers, index(l:buffers, l:thisbuf))
+      endwhile
+    endwhile
+
+    " if there are any buffers left, delete them
+    if len(l:buffers)
+      execute 'bwipeout' join(l:buffers)
+    endif
+  finally
+    " go back to our original tab page
+    execute 'tabnext' l:currentTab
+  endtry
+endfunction

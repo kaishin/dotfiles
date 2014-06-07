@@ -47,6 +47,7 @@
   tool = Kaleidoscope
 [difftool]
   prompt = false
+  tool = Kaleidoscope
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true

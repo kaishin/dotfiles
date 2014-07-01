@@ -1,7 +1,7 @@
 " Default GUI Colours
 let s:foreground = "c5c8c6"
-let s:background = "1c1e21"
-let s:selection = "373b41"
+let s:background = "1e2124"
+let s:selection = "3d4147"
 let s:line = "282a2e"
 let s:comment = "969896"
 let s:red = "cc6666"
@@ -281,7 +281,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("Function", s:blue, "", "")
   call <SID>X("Constant", s:orange, "", "")
   call <SID>X("String", s:green, "", "")
-  call <SID>X("Special", s:foreground, "", "")
+  call <SID>X("Special", s:orange, "", "")
+  call <SID>X("Delimiter", s:comment, "", "")
   call <SID>X("PreProc", s:purple, "", "")
   call <SID>X("Operator", s:aqua, "", "none")
   call <SID>X("Type", s:blue, "", "none")

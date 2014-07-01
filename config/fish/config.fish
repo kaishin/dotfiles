@@ -13,4 +13,6 @@ set -x PATH /usr/local/bin $PATH
 set -x EDITOR /usr/local/bin/mvim
 set -x VISUAL /usr/local/bin/mvim
 
+set -x PGHOST localhost
+
 rvm use default >/dev/null

@@ -57,3 +57,8 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 " Neocomplcache
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Commands
+command! NixCSScomments %s@/\*\([^*]\|[\r\n]\|\(\*\+\([^*/]\|[\r\n]\)\)\)*\*\+/@@g
+command! RemoveWhiteSpace %s/\s\+$//
+command! EditTheme :tabe ~/.vim/colors/tomorrow-night.vim<CR>

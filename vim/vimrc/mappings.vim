@@ -26,7 +26,7 @@ nmap <Leader>q gqip
 nmap <Leader>s ?{<CR>jV}k:sort<CR>
 nmap <Leader>t :CtrlP<CR>
 nmap <Leader>T :CtrlPBuffer<CR>
-nmap <leader>' :%s/"/'/g<CR>
+nmap <leader>' :%s/'/"/g<CR>
 nmap <leader>G :Gbrowse<CR>
 nmap <leader>V V`]
 nmap <leader>b :sp<CR>

@@ -55,5 +55,9 @@ Plugin 'rking/ag.vim'
 Plugin 'bling/vim-airline'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-reload'
+
+" Inspect
+Plugin 'gerw/vim-HiLinkTrace'
 
 call vundle#end()

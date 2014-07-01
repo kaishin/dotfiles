@@ -1,4 +1,5 @@
 alias migrate 'rake db:migrate'
+alias parallel-spec 'bundle exec rake parallel:spec'
 alias mkdir 'mkdir -p'
 alias ... '../..'
 alias aliases 'mvim ~/.config/fish/aliases.fish'

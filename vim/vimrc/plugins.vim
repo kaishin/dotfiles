@@ -1,6 +1,5 @@
 set nocompatible
 filetype off
-
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
@@ -12,13 +11,16 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'kaishin/vim-flavored-markdown'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'othree/html5.vim'
-Plugin 'othree/xml.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-cucumber'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'scrooloose/syntastic'
+Plugin 'othree/xml.vim'
 Plugin 'vim-scripts/svg.vim'
 
 " File System

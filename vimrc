@@ -60,7 +60,6 @@ set noswapfile
 set foldlevelstart=20
 
 " Highlight cursor Line + Column
-set cursorline
 set cursorcolumn
 
 " Open widnow below

@@ -21,6 +21,7 @@ nmap <C-z> <C-w>+
 nmap <Leader>R :tabe $MYVIMRC<CR>:vsp $HOME/.vim/vimrc/mappings.vim<CR>:sp $HOME/.vim/vimrc/plugins.vim<CR>
 
 nmap <Leader>U :UltiSnipsEdit<CR>
+nmap <Leader>C :set cursorline!<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>q gqip
 nmap <Leader>s ?{<CR>jV}k:sort<CR>

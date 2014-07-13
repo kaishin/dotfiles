@@ -43,12 +43,6 @@ nnoremap Q <nop>
 vmap <leader>i ==
 nmap <leader>W :call Wipeout()<CR>
 
-" Sneak Mappings
-nmap , <Plug>SneakForward
-nmap K <Plug>SneakBackward
-nmap <leader> <Plug>SneakNext
-nmap <bs> <Plug>SneakPrevious
-
 " Disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>

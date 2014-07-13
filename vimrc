@@ -28,6 +28,7 @@ autocmd BufNewFile,BufRead *.slim set ft=slim syntax=slim
 autocmd BufNewFile,BufRead *.hbs set ft=mustache syntax=mustache
 autocmd BufNewFile,BufRead *.scss set ft=scss syntax=scss
 autocmd BufNewFile,BufRead *.svg set ft=xml syntax=svg
+autocmd BufRead,BufEnter Brewfile set ft=conf
 autocmd BufRead *.json set ft=javascript
 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags

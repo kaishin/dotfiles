@@ -1,0 +1,84 @@
+snippet     ex
+abbr        extend
+options     head
+  @extend %${1};
+
+snippet     fwn
+abbr        font-weight normal
+options     head
+  font-weight: normal;
+
+snippet     in
+abbr        include
+options     head
+  @include ${1}(${2});
+
+snippet     pseudo
+abbr        pseudo element
+options     head
+  &:${1:before} {
+    @include size(${2});
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+snippet     dib
+abbr        display inline-block
+options     head
+  display: inline-block;
+
+snippet     dn
+abbr        display none
+options     head
+  display: none;
+
+snippet     db
+abbr        display block
+options     head
+  display: block;
+
+snippet     di
+abbr        display inline
+options     head
+  display: inline;
+
+snippet     tac
+abbr        align text center
+options     head
+  text-align: center;
+
+snippet     tal
+abbr        align text left
+options     head
+  text-align: left;
+
+snippet     tar
+abbr        align text right
+options     head
+  text-align: right;
+
+snippet     fl
+abbr        float left
+options     head
+  float: left;
+
+snippet     fr
+abbr        float right
+options     head
+  float: right;
+
+snippet     fn
+abbr        float none
+options     head
+  float: none;
+
+snippet     fs
+abbr        font-size
+options     head
+  font-size: ${1:1}em;
+
+snippet     size
+abbr        size mixin
+options     head
+  @include size(${1:32px});${2}

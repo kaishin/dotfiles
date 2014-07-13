@@ -20,7 +20,7 @@ nmap <C-s> <C-w><
 nmap <C-z> <C-w>+
 nmap <Leader>R :tabe $MYVIMRC<CR>:vsp $HOME/.vim/vimrc/mappings.vim<CR>:sp $HOME/.vim/vimrc/plugins.vim<CR>
 
-nmap <Leader>U :UltiSnipsEdit<CR>
+nmap <Leader>S :NeoSnippetEdit -split -vertical<CR>
 nmap <Leader>C :set cursorline!<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>q gqip
@@ -57,6 +57,11 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 " Neocomplcache
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Neosnippet keys
+imap <C-z> <Plug>(neosnippet_expand_or_jump)
+smap <C-z> <Plug>(neosnippet_expand_or_jump)
+xmap <C-z> <Plug>(neosnippet_expand_target)
 
 " Commands
 command! NixCSScomments %s@/\*\([^*]\|[\r\n]\|\(\*\+\([^*/]\|[\r\n]\)\)\)*\*\+/@@g

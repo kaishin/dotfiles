@@ -95,13 +95,8 @@ let g:neocomplete#max_list = 10
 let g:neocomplete#auto_completion_start_length = 3
 let g:neocomplete#force_overwrite_completefunc = 1
 
-" UltiSnips options
-let g:UltiSnipsExpandTrigger = '<c-z>'
-let g:UltiSnipsJumpForwardTrigger = '<c-z>'
-let g:UltiSnipsJumpBackwardTrigger = '<c-s>'
-let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsSnippetDirectories = [ 'ulti-snippets' ]
-let g:UltiSnipsSnippetsDir = '~/.vim/ulti-snippets'
+" Neosnippet options
+let g:neosnippet#snippets_directory = '~/.vim/snippets'
 
 " CtrlP options
 let g:ctrlp_max_height = 10

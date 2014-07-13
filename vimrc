@@ -114,7 +114,7 @@ endif
 " Git-gutter
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
-"
+
 " Emmet
 let g:use_emmet_complete_tag = 1
 let g:user_emmet_leader_key = '<c-y>'

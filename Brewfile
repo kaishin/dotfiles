@@ -3,13 +3,19 @@ update
 # Ruby
 install ruby
 install rbenv
-install ruby-build
+install rbenv-aliases
+install rbenv-binstubs
+install rbenv-default-gems
 install rbenv-gem-rehash
 install rbenv-vars
+install ruby-build
+install brew-gem
+gem t
 
 # Python
 install python
 install python3
+install brew-pip
 
 # Node
 install node

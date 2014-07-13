@@ -119,6 +119,15 @@ let g:gitgutter_eager = 0
 let g:use_emmet_complete_tag = 1
 let g:user_emmet_leader_key = '<c-y>'
 
+" Syntastic options
+let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_coffee_checkers = ['coffee']
+" let g:syntastic_coffee_coffeelint_args = '--csv'
+let g:syntastic_error_symbol = '!!'
+let g:syntastic_warning_symbol = '!'
+let g:syntastic_style_error_symbol = '>>'
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['coffee', 'ruby'], 'passive_filetypes': ['scss', 'eruby'] }
+
 " Ignore these files
 set wildignore+=*.sw?
 set wildignore+=.git,.svn

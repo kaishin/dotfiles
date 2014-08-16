@@ -1,9 +1,11 @@
+filetype plugin indent on
+
 source $HOME/.vim/vimrc/mappings.vim
 source $HOME/.vim/vimrc/autoload.vim
 source $HOME/.vim/vimrc/commands.vim
 source $HOME/.vim/vimrc/plugins.vim
 
-filetype plugin indent on
+" filetype plugin indent on
 
 " Disable mouse
 set mouse=""
@@ -33,7 +35,7 @@ autocmd BufRead *.json set ft=javascript
 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType css,css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS iskeyword+=-
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 " CocoaPods
@@ -64,7 +66,7 @@ set noswapfile
 set foldlevelstart=20
 
 " Highlight cursor Line + Column
-set cursorcolumn
+" set cursorcolumn
 
 " Open widnow below
 set splitbelow

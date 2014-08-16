@@ -32,6 +32,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'henrik/vim-open-url'
 Plugin 'mkitt/browser-refresh.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/webapi-vim'
 
 " Type less
 Plugin 'Shougo/neocomplete.vim'

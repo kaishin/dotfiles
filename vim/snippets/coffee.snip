@@ -2,3 +2,16 @@ snippet     log
 abbr        console log
 options     head
   console.log "${1}"
+
+snippet     class
+abbr        basic class skeleton
+options     head
+  class ${1: Name}
+    constructor: ->
+      # Methods go here
+
+  App.$1 = $1
+
+  $ ->
+    if $("${2}").length >= 1
+      new $1

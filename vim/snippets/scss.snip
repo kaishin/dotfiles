@@ -1,3 +1,5 @@
+extend neat
+
 snippet     ex
 abbr        extend
 options     head
@@ -8,10 +10,25 @@ abbr        font-weight normal
 options     head
   font-weight: normal;
 
+snippet     fwb
+abbr        font-weight bold
+options     head
+  font-weight: bold;
+
+snippet     fw
+abbr        font-weight
+options     head
+  font-weight: ${1};
+
 snippet     in
 abbr        include
 options     head
-  @include ${1}(${2});
+  @include ${1}(${2});${3}
+
+snippet     im
+abbr        import
+options     head
+  @import "${1}";
 
 snippet     pseudo
 abbr        pseudo element
@@ -42,6 +59,31 @@ snippet     di
 abbr        display inline
 options     head
   display: inline;
+
+snippet     oh
+abbr        overflow hidden
+options     head
+  overflow: hidden;
+
+snippet     ov
+abbr        overflow visible
+options     head
+  overflow: visible;
+
+snippet     oa
+abbr        overflow auto
+options     head
+  overflow: auto;
+
+snippet     poa
+abbr        position absolute
+options     head
+  position: absolute;
+
+snippet     por
+abbr        position relative
+options     head
+  position: relative;
 
 snippet     tac
 abbr        align text center
@@ -81,4 +123,16 @@ options     head
 snippet     size
 abbr        size mixin
 options     head
-  @include size(${1:32px});${2}
+  @include size(${1});${2}
+
+snippet     vam
+abbr        vertical-align middle
+options     head
+  vertical-align: middle;
+
+snippet     media
+abbr        media mixin
+options     head
+  @include media(${1}) {
+    ${2}
+  }

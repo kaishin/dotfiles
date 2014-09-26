@@ -25,6 +25,7 @@
   mt = mergetool
   ma = merge --abort
   nix = reset --hard
+  nuke = submodule foreach git reset --hard
   pf = push -f
   pop = stash pop
   pr = pull-request
@@ -33,7 +34,6 @@
   ra = rebase --abort
   rc = rebase --continue
   rim = rebase -i master
-  rm = rebase master
   wipe = clean -f -d
 [push]
   default = current

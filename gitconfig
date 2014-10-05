@@ -2,23 +2,19 @@
   name = Reda Lemeden
   email = reda@thoughtbot.com
 [core]
-  excludesfile = /Users/reda/.gitignore
-  editor = mvim -f
+  excludesfile = ~/.gitignore
+  editor = vim -f
   quotepath = false
 [mergetool]
   keepBackup = false
   prompt = false
 [alias]
   aa = add --all
-  b = browse
   c = commit -m
   ca = commit --amend
-  cb = create-branch
   co = checkout
   cp = cherry-pick
   cv = commit -v
-  db = delete-branch
-  dt = difftool
   f = fetch
   log10 = log -n 10
   log5 = log -n 5
@@ -28,7 +24,6 @@
   nuke = submodule foreach git reset --hard
   pf = push -f
   pop = stash pop
-  pr = pull-request
   pl = pull
   prb = pull --rebase
   ra = rebase --abort
@@ -41,29 +36,11 @@
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [github]
   user = kaishin
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-  tool = Kaleidoscope
-[difftool]
-  prompt = false
-  tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
-[merge]
-  tool = Kaleidoscope
 [color]
   ui = auto
 [case]
   ignorecase = false
 [web]
   browser = open
-[filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
-[gitsh]
-  prompt = "🐹  %D %c%b%w(%c%#%w)"
-  nogreeting = true
 [pull]
   rebase = true

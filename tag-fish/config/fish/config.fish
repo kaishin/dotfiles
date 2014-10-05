@@ -1,5 +1,6 @@
 set FISH $HOME/.config/fish
 . $FISH/aliases.fish
+. $FISH/colors.fish
 
 set -x PATH /usr/X11/bin $PATH
 set -x PATH /usr/bin $PATH

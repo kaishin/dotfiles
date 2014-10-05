@@ -1,4 +1,5 @@
 *.DS_Store
+*.sw[nop]
 .bundle
 .sass-cache/
 log/*.log

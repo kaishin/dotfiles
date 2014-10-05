@@ -18,18 +18,11 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 
 " Comment & uncomment
-nnoremap <Space>c :xccmd commentAndUncommentCurrentLines<CR>
-vnoremap <Space>c :xccmd commentAndUncommentCurrentLines<CR>
-
-" Open quickly
-nnoremap <Space>t :xccmd openQuickly<CR>
-
-" Open & close assistant
-nnoremap <Space>v <C-w>n :xccmd openQuickly<CR>
-nnoremap <Space>w <C-w>q
+nnoremap \c :xccmd commentAndUncommentCurrentLines<CR>
+vnoremap \c :xccmd commentAndUncommentCurrentLines<CR>
 
 " Indent selection
-nnoremap <Space>i ==
+nnoremap \i ==
 
 " Open navigator
-nnoremap <Space>n :xccmd toggleNavigatorsVisibility<CR>
+nnoremap \n :xccmd toggleNavigatorsVisibility<CR>

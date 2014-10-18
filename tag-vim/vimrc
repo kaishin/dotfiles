@@ -1,0 +1,72 @@
+set shell=bash
+set nocompatible
+
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch "Shougo/neobundle.vim"
+NeoBundle "bling/vim-airline"
+NeoBundle "dag/vim-fish"
+call neobundle#end()
+NeoBundleCheck
+
+filetype plugin indent on
+syntax on
+colorscheme tomorrow-night
+
+set laststatus=2
+set noshowmode
+set mouse=""
+set hlsearch
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+set backspace=2
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+
+set splitbelow
+set splitright
+
+set list listchars=tab:»»,trail:●
+
+set number
+set numberwidth=5
+
+let mapleader = " "
+imap <c-a> <esc>
+vmap <c-a> <esc>
+nmap <return> :
+
+nmap <c-h> <c-w>h
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-l> <c-w>l
+
+nmap <c-q> <c-w>-
+nmap <c-a> <c-w>>
+nmap <c-s> <c-w><
+nmap <c-z> <c-w>+
+
+nmap <leader>r :vsp $myvimrc<cr>
+nmap <leader>b :sp<cr>
+nmap <leader>v :vsp<cr>
+nmap <leader>s :w<cr>
+
+nnoremap <left> :echoe "use h"<cr>
+nnoremap <right> :echoe "use l"<cr>
+nnoremap <up> :echoe "use k"<cr>
+nnoremap <down> :echoe "use j"<cr>
+
+let g:airline_theme='night'
+let g:airline_section_a = "%{tolower(airline#util#wrap(airline#parts#mode(),0))}"
+let g:airline_section_b = "\u27E9 %F"
+let g:airline_section_y = "%p%% \u27E8 %{airline#util#wrap(airline#parts#filetype(),0)}"
+let g:airline_section_c = ""
+let g:airline_section_x = ""
+let g:airline_section_z = ""
+let g:airline_left_sep = ""
+let g:airline_right_sep = ""

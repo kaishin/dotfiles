@@ -1,2 +1,2 @@
-TAGS="fish mvim git ruby"
+TAGS="fish mvim git ruby vim"
 EXCLUDES="README.md Brewfile"

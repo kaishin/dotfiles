@@ -29,6 +29,7 @@
   ra = rebase --abort
   rc = rebase --continue
   rim = rebase -i master
+  st = status
   wipe = clean -f -d
 [push]
   default = current

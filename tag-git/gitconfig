@@ -15,21 +15,20 @@
   co = checkout
   cp = cherry-pick
   cv = commit -v
+  df = diff
   f = fetch
   log10 = log -n 10
   log5 = log -n 5
   mt = mergetool
-  ma = merge --abort
   nix = reset --hard
   nuke = submodule foreach git reset --hard
   pf = push -f
   pop = stash pop
   pl = pull
-  prb = pull --rebase
-  ra = rebase --abort
   rc = rebase --continue
   rim = rebase -i master
   st = status
+  squash = merge --squash
   wipe = clean -f -d
 [push]
   default = current

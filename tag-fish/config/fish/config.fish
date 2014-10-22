@@ -8,3 +8,6 @@ set -x PATH /bin $PATH
 set -x PATH /usr/sbin $PATH
 set -x PATH /sbin $PATH
 set -x PATH /usr/local/bin $PATH
+
+set -x PATH $HOME/.rbenv/bin $PATH
+set -x PATH $HOME/.rbenv/shims $PATH

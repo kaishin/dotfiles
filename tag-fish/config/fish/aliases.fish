@@ -1,5 +1,5 @@
-alias ... '../..'
-alias aliases 'vim ~/.config/fish/aliases.fish'
-alias gpg 'gpg2'
-alias mkdir 'mkdir -p'
-alias git 'gh'
+alias ... "../.."
+alias aliases "vim ~/.config/fish/aliases.fish"
+alias gpg "gpg2"
+alias mkdir "mkdir -p"
+alias git "gh"

@@ -7,11 +7,7 @@ if test -d $FISH/osx
   set -x PATH /usr/X11/bin $PATH
 end
 
-set -x PATH /usr/bin $PATH
-set -x PATH /bin $PATH
-set -x PATH /usr/sbin $PATH
-set -x PATH /sbin $PATH
-set -x PATH /usr/local/bin $PATH
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
 
-set -x PATH $HOME/.rbenv/bin $PATH
-set -x PATH $HOME/.rbenv/shims $PATH
+set EDITOR '/usr/bin/vim'

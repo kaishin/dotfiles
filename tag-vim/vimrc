@@ -1,7 +1,10 @@
 set shell=bash
-set nocompatible
 
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+if has('vim_starting')
+  set nocompatible
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+end
+
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch "Shougo/neobundle.vim"
 NeoBundle "bling/vim-airline"

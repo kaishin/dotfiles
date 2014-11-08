@@ -9,6 +9,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch "Shougo/neobundle.vim"
 NeoBundle "bling/vim-airline"
 NeoBundle "dag/vim-fish"
+NeoBundle "evanmiller/nginx-vim-syntax"
 call neobundle#end()
 NeoBundleCheck
 

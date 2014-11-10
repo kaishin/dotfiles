@@ -15,6 +15,7 @@
   co = checkout
   cp = cherry-pick
   cv = commit -v
+  db = branch -D
   df = diff
   f = fetch
   log10 = log -n 10
@@ -25,8 +26,10 @@
   pf = push -f
   pop = stash pop
   pl = pull
+  pr = pull-request
   rc = rebase --continue
   rim = rebase -i master
+  rdb = push origin --delete
   st = status
   squash = merge --squash
   wipe = clean -f -d

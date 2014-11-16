@@ -8,3 +8,4 @@ tags
 tmp/**/*
 !tmp/cache/.keep
 .env
+VagrantFile

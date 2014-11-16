@@ -7,6 +7,10 @@ if test -d $FISH/osx
   set -x PATH /usr/X11/bin $PATH
 end
 
+if test -d $FISH/server
+  . $FISH/server/aliases.fish
+end
+
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 

@@ -57,7 +57,7 @@ nmap <c-a> <c-w>>
 nmap <c-s> <c-w><
 nmap <c-z> <c-w>+
 
-nmap <leader>r :vsp $myvimrc<cr>
+nmap <leader>r :vsp $MYVIMRC<cr>
 nmap <leader>b :sp<cr>
 nmap <leader>v :vsp<cr>
 nmap <leader>s :w<cr>

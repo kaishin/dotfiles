@@ -19,6 +19,7 @@ syntax on
 colorscheme tomorrow-night
 
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
+autocmd BufRead,BufNewFile Berksfile set filetype=ruby
 
 set laststatus=2
 set noshowmode

@@ -8,5 +8,9 @@ tags
 tmp/**/*
 !tmp/cache/.keep
 .env
+
+# Vagrant
+.vagrant
 VagrantFile
-Cheffile
+Berksfile
+Berksfile.lock

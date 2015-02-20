@@ -2,6 +2,8 @@
 *.sw[nop]
 .bundle
 .sass-cache/
+*.scssc
+*.map
 log/*.log
 rerun.txt
 tags

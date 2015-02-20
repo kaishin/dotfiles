@@ -12,5 +12,3 @@ tmp/**/*
 # Vagrant
 .vagrant
 VagrantFile
-Berksfile
-Berksfile.lock

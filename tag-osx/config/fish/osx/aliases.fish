@@ -1,4 +1,4 @@
-alias debian-droplet "ssh ssh-debian.redalemeden.com"
+alias ssh-server "ssh server.redalemeden.com"
 alias osxinfo "sw_vers"
 alias rsa "cat ~/.ssh/id_rsa.pub | pbcopy"
 

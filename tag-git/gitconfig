@@ -47,3 +47,5 @@
   browser = open
 [pull]
   rebase = true
+[credential]
+  helper = osxkeychain

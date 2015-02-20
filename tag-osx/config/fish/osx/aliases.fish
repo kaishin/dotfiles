@@ -1,7 +1,8 @@
 alias debian-droplet "ssh ssh-debian.redalemeden.com"
-alias finder "open ."
 alias osxinfo "sw_vers"
 alias rsa "cat ~/.ssh/id_rsa.pub | pbcopy"
+
+alias finder "open ."
 alias subl "sublime ./"
 alias tower "gittower ./"
 alias xcode "open -a 'Xcode' ."

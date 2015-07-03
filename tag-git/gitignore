@@ -5,10 +5,12 @@
 *.scssc
 *.map
 log/*.log
+*.log
 rerun.txt
 tags
 tmp/**/*
 !tmp/cache/.keep
+cache/
 .env
 
 # Vagrant

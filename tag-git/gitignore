@@ -15,4 +15,9 @@ cache/
 
 # Vagrant
 .vagrant
+vagrant/
 VagrantFile
+Berksfile
+Cheffile
+Cheffile.lock
+Berksfile.lock

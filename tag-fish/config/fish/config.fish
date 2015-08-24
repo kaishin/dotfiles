@@ -16,3 +16,6 @@ end
 set PATH $HOME/.node/bin $PATH
 
 set EDITOR '/usr/bin/vim'
+
+set -gx RBENV_ROOT $HOME/.rbenv
+. (rbenv init -|psub)

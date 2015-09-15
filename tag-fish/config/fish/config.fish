@@ -5,8 +5,6 @@ set FISH $HOME/.config/fish
 if test -d $FISH/osx
   . $FISH/osx/aliases.fish
   set -x PATH /usr/X11/bin $PATH
-  set PATH $HOME/.rbenv/bin $PATH
-  set PATH $HOME/.rbenv/shims $PATH
 end
 
 if test -d $FISH/server
@@ -14,8 +12,7 @@ if test -d $FISH/server
 end
 
 set PATH $HOME/.node/bin $PATH
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
 
 set EDITOR '/usr/bin/vim'
-
-set -gx RBENV_ROOT $HOME/.rbenv
-. (rbenv init -|psub)

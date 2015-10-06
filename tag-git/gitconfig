@@ -1,6 +1,6 @@
 [user]
   name = Reda Lemeden
-  email = reda@thoughtbot.com
+  email = git@kaishin.haz.email
 [core]
   excludesfile = ~/.gitignore
   editor = vim -f

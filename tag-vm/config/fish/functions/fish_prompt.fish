@@ -1,4 +1,4 @@
-set _glyph \u27E9
+set _glyph \u27E9\u27E9
 
 function fish_prompt
     set -l yellow (set_color -o yellow)

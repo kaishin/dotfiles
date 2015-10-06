@@ -1,4 +1,4 @@
-alias ... "../.."
+alias ... "cd ../.."
 alias aliases "vim ~/.config/fish/aliases.fish"
 alias gpg "gpg2"
 alias mkdir "mkdir -p"

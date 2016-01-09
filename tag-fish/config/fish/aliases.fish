@@ -1,7 +1,4 @@
 alias ... "cd ../.."
-alias aliases "vim ~/.config/fish/aliases.fish"
-alias gpg "gpg2"
+alias ls "ls -al"
 alias mkdir "mkdir -p"
-alias bundle-init "bundle install --binstubs .bundle/bin"
-alias c "clear"
-alias git-clean "git nix & git wipe & git nuke"
+

@@ -27,6 +27,7 @@
   pop = stash pop
   pl = pull
   pr = pull-request
+  ra = rebase --abort
   rc = rebase --continue
   rim = rebase -i master
   rdb = push origin --delete

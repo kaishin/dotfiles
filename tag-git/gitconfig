@@ -23,7 +23,7 @@
   mt = mergetool
   nix = reset --hard
   nuke = submodule foreach git reset --hard
-  pf = push -f
+  pf = push --force-with-lease
   pop = stash pop
   pl = pull
   pr = pull-request

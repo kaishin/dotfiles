@@ -26,3 +26,6 @@ nnoremap <C-n> :xccmd toggleNavigatorsVisibility<CR>
 
 " Control-p
 nnoremap <C-p> :xccmd openQuickly<CR>
+
+" Hide bar
+set laststatus=0

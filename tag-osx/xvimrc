@@ -29,3 +29,4 @@ nnoremap <C-p> :xccmd openQuickly<CR>
 
 " Hide bar
 set laststatus=0
+set blinkcursor

@@ -1,5 +1,6 @@
 alias dev-certs "security find-identity -v -p codesigning"
 alias dns-flush "sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; echo \"DNS has been flushed\""
+alias dropbox "dropbox_uploader.sh"
 alias finder "open ."
 alias fuxcode "rm -rf ~/Library/Developer/Xcode/DerivedData/"
 alias git "gh"

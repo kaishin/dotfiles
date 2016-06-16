@@ -1,5 +1,6 @@
 #!/usr/bin/env fish
 
 function vectrace
-  convert $argv[1] bmp:- | potrace --output $argv[2]
+  set fileName (basename $argv | cut -d. -f1)
+  convert $argv bmp:- | potrace --output ./$fileName.eps
 end

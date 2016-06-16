@@ -1,5 +1,5 @@
 alias dev-certs "security find-identity -v -p codesigning"
-alias dns-flush "sudo discoveryutil udnsflushcaches"
+alias dns-flush "sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; echo \"DNS has been flushed\""
 alias finder "open ."
 alias fuxcode "rm -rf ~/Library/Developer/Xcode/DerivedData/"
 alias git "gh"

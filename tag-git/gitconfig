@@ -12,7 +12,9 @@
 [alias]
   aa = add --all
   c = commit -m
+  cs = commit -S -m
   ca = commit --amend
+  cas = commit --amend -S
   co = checkout
   cp = cherry-pick
   cv = commit -v

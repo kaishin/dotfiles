@@ -4,7 +4,6 @@ set FISH $HOME/.config/fish
 
 if test -d $FISH/osx
   . $FISH/osx/aliases.fish
-  set -x PATH /usr/X11/bin $PATH
   status --is-interactive; and . (swiftenv init -|psub)
   set -x GOPATH $HOME/.golang
   set -x GOROOT /usr/local/opt/go/libexec

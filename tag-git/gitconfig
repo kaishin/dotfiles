@@ -10,6 +10,7 @@
   keepBackup = false
   prompt = false
 [alias]
+  branch-name = "!git rev-parse --abbrev-ref HEAD"
   aa = add --all
   c = commit -m
   cs = commit -S -m
@@ -20,10 +21,13 @@
   cv = commit -v
   db = branch -D
   df = diff
+  dmb = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
   f = fetch
   log10 = log -n 10
   log5 = log -n 5
   mt = mergetool
+  merge-onto = "!git fetch . $(git branch-name):$1"
+  mo = merge-onto
   nix = reset --hard
   nuke = submodule foreach git reset --hard
   pf = push --force-with-lease
@@ -34,7 +38,7 @@
   rc = rebase --continue
   rim = rebase -i master
   rdb = push origin --delete
-  st = status
+  st = status -s
   squash = merge --squash
   wipe = clean -f -d
 [push]

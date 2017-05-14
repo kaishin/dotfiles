@@ -15,7 +15,6 @@ if test -d $FISH/server
 end
 
 set PATH $HOME/.node/bin $PATH
-set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 
 set EDITOR '/usr/bin/vim'

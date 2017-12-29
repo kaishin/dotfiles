@@ -28,6 +28,7 @@
   co = checkout
   cp = cherry-pick
   cv = commit -v
+  clean-submodules = submodule foreach --recursive git checkout .
   db = branch -D
   df = diff
   dmb = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"

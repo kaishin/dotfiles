@@ -3,7 +3,7 @@ alias dns-flush "sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; 
 alias dropbox "dropbox_uploader.sh"
 alias finder "open ."
 alias fuxcode "rm -rf ~/Library/Developer/Xcode/DerivedData/"
-alias git "gh"
+alias git "hub"
 alias osxinfo "sw_vers"
 alias permission-fix "sudo chown -R (whoami):admin /usr/local"
 alias rsa "cat ~/.ssh/id_rsa.pub | pbcopy"

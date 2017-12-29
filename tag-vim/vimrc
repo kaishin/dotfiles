@@ -38,8 +38,6 @@ set expandtab
 set splitbelow
 set splitright
 
-set list listchars=tab:»»,trail:●
-
 set number
 set numberwidth=5
 

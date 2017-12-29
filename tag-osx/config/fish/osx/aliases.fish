@@ -12,5 +12,5 @@ alias ssh-server "ssh server.redalemeden.com"
 alias subl "sublime ./"
 alias tower "gittower ./"
 alias xcode "open -a 'Xcode' ."
-alias xcode-beta "open -a 'Xcode-Beta' ."
+alias xcode-8 "open -a 'Xcode 8' ."
 

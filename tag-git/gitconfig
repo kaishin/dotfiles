@@ -50,6 +50,7 @@
   rdb = push origin --delete
   st = status -s
   squash = merge --squash
+  update-master = "!git fetch | git pull origin master"
   wipe = clean -f -d
 [push]
   default = current

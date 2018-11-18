@@ -8,13 +8,13 @@ if test -d $FISH/osx
   set -x GOPATH $HOME/.golang
   set -x GOROOT /usr/local/opt/go/libexec
   set PATH $GOPATH/bin $GOROOT/bin $PATH
+  set PATH $HOME/.node/bin $PATH
+  set PATH $HOME/.rbenv/shims $PATH
 end
 
 if test -d $FISH/server
   . $FISH/server/aliases.fish
 end
 
-set PATH $HOME/.node/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
 
 set EDITOR '/usr/bin/vim'

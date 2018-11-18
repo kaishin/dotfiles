@@ -16,5 +16,7 @@ if test -d $FISH/server
   . $FISH/server/aliases.fish
 end
 
-
 set EDITOR '/usr/bin/vim'
+
+fundle plugin 'edc/bass'
+fundle init

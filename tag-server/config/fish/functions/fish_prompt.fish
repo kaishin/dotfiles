@@ -1,4 +1,4 @@
-set _glyph \u27E9\u27E9
+set _glyph ">"
 set _flag \u2691
 
 function _git_branch_name

@@ -15,6 +15,7 @@ end
 if test -d $FISH/server
   . $FISH/server/aliases.fish
   fundle plugin 'danhper/fish-ssh-agent'
+  fundle plugin 'oh-my-fish/plugin-linuxbrew'
 end
 
 set EDITOR '/usr/bin/vim'

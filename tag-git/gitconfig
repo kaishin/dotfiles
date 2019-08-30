@@ -1,7 +1,7 @@
 [user]
-  name = Reda Lemeden
-  email = git@kaishin.haz.email
-  signingkey = F1B02C90
+	name = Reda Lemeden
+	email = git@redalemeden.com
+	signingkey = "2A4B46ECF1B02C90"
 [core]
   excludesfile = ~/.gitignore
   editor = vim -f

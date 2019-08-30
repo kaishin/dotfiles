@@ -10,6 +10,7 @@ if test -d $FISH/osx
   set PATH $GOPATH/bin $GOROOT/bin $PATH
   set PATH $HOME/.node/bin $PATH
   set PATH $HOME/.rbenv/shims $PATH
+  set -gx PKG_CONFIG_PATH "/usr/local/opt/openssl@1.1/lib/pkgconfig"
 end
 
 if test -d $FISH/server

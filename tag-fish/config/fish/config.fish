@@ -15,7 +15,10 @@ end
 
 if test -d $FISH/server
   . $FISH/server/aliases.fish
+  set PATH $HOME/swift/usr/bin $PATH
+  
   fundle plugin 'danhper/fish-ssh-agent'
+
   set -l linuxbrew_bin_path "/home/linuxbrew/.linuxbrew/bin"
   set -l linuxbrew_sbin_path "/home/linuxbrew/.linuxbrew/sbin"
   set -l linuxbrew_manpath "/home/linuxbrew/.linuxbrew/share/man"
@@ -32,8 +35,6 @@ if test -d $FISH/server
 
   contains -- $linuxbrew_infopath $INFOPATH
     or set -gx INFOPATH $linuxbrew_infopath $INFOPATH
-    
-  set PATH $HOME/swift $PATH
 end
 
 set EDITOR '/usr/bin/vim'

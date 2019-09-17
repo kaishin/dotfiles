@@ -1,5 +1,5 @@
 set _glyph ">"
-set _flag \u2691
+set _flag "!!"
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')

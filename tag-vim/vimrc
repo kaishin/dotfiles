@@ -42,10 +42,16 @@ set splitright
 set number
 set numberwidth=5
 
-let mapleader = " "
+set cursorline
+
 imap <c-a> <esc>
 vmap <c-a> <esc>
 nmap <return> :
+
+imap jk <esc>
+imap kj <esc>
+imap jj <esc>
+imap kk <esc>
 
 nmap <c-h> <c-w>h
 nmap <c-j> <c-w>j
@@ -80,5 +86,5 @@ let g:airline_right_sep = ""
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_browse_split = 4
-let g:netrw_winsize = 15
+let g:netrw_winsize = 20
 let g:netrw_altv = 1

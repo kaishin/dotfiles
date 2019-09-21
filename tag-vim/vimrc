@@ -11,6 +11,7 @@ NeoBundle "bling/vim-airline"
 NeoBundle "dag/vim-fish"
 NeoBundle "elzr/vim-json"
 NeoBundle "ekalinin/Dockerfile.vim"
+NeoBundle "scrooloose/nerdtree"
 call neobundle#end()
 NeoBundleCheck
 
@@ -18,8 +19,11 @@ filetype plugin indent on
 syntax on
 colorscheme tomorrow-night
 
-autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
-autocmd BufRead,BufNewFile Berksfile set filetype=ruby
+" #NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
 
 set laststatus=2
 set noshowmode
@@ -83,8 +87,3 @@ let g:airline_section_z = ""
 let g:airline_left_sep = ""
 let g:airline_right_sep = ""
 
-let g:netrw_liststyle = 3
-let g:netrw_banner = 0
-let g:netrw_browse_split = 4
-let g:netrw_winsize = 20
-let g:netrw_altv = 1

@@ -15,7 +15,7 @@ end
 
 if test -d $FISH/server
   . $FISH/server/aliases.fish
-  set PATH $HOME/swift/usr/bin $PATH
+  set -gx PATH $HOME/.swift/usr/bin $PATH
   
   fundle plugin 'danhper/fish-ssh-agent'
 

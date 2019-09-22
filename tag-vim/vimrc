@@ -17,7 +17,10 @@ NeoBundleCheck
 
 filetype plugin indent on
 syntax on
-colorscheme tomorrow-night
+colorscheme AtelierSulphurpoolDark
+highlight Normal ctermbg=none
+highlight SignColumn ctermbg=none
+highlight LineNr ctermbg=none ctermfg=62
 
 " #NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -45,8 +48,6 @@ set splitright
 
 set number
 set numberwidth=5
-
-set cursorline
 
 imap <c-a> <esc>
 vmap <c-a> <esc>

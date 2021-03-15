@@ -10,6 +10,8 @@ if test -d $FISH/osx
   set PATH $GOPATH/bin $GOROOT/bin $PATH
   set PATH $HOME/.node/bin $PATH
   set PATH $HOME/.rbenv/shims $PATH
+  set PATH $HOME/.cargo/bin $PATH
+  set PATH /usr/local/sbin $PATH
   set -gx PKG_CONFIG_PATH "/usr/local/opt/openssl@1.1/lib/pkgconfig"
 end
 
@@ -17,7 +19,6 @@ if test -d $FISH/server
   . $FISH/server/aliases.fish
   set -gx PATH $HOME/.swift/usr/bin $PATH
   
-  fundle plugin 'danhper/fish-ssh-agent'
 
   set -l linuxbrew_bin_path "/home/linuxbrew/.linuxbrew/bin"
   set -l linuxbrew_sbin_path "/home/linuxbrew/.linuxbrew/sbin"
@@ -37,9 +38,11 @@ if test -d $FISH/server
     or set -gx INFOPATH $linuxbrew_infopath $INFOPATH
 end
 
+
 set EDITOR '/usr/bin/vim'
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 
 fundle plugin 'edc/bass'
+fundle plugin 'danhper/fish-ssh-agent'
 fundle init

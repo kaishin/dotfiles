@@ -13,4 +13,5 @@ alias subl "sublime ./"
 alias tower "gittower ./"
 alias xcode "open -a 'Xcode' ."
 alias xcode-b "open -a 'Xcode-beta' ."
+alias ports "lsof -nP +c 15 | grep LISTEN"
 

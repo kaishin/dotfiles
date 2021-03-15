@@ -3,7 +3,6 @@ alias dns-flush "sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; 
 alias finder "open ."
 alias fixopenwith "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain u -domain s -domain l -v"
 alias fuxcode "rm -rf ~/Library/Developer/Xcode/DerivedData/"
-alias git "hub"
 alias npm-leaves "npm ls -depth 0 -g"
 alias osxinfo "sw_vers"
 alias permission-fix "sudo chown -R (whoami):admin /usr/local"

@@ -5,6 +5,8 @@ alias fixopenwith "/System/Library/Frameworks/CoreServices.framework/Versions/A/
 alias fuxcode "rm -rf ~/Library/Developer/Xcode/DerivedData/"
 alias npm-leaves "npm ls -depth 0 -g"
 alias osxinfo "sw_vers"
+alias python "python3"
+alias pip "pip3"
 alias permission-fix "sudo chown -R (whoami):admin /usr/local"
 alias subl "sublime ./"
 alias tower "gittower ./"

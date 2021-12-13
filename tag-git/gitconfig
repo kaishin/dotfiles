@@ -1,7 +1,6 @@
 [user]
-	name = Reda Lemeden
-	email = git@redalemeden.com
-	signingkey = "2A4B46ECF1B02C90"
+  name = Reda Lemeden
+  email = git@redalemeden.com
 [core]
   excludesfile = ~/.gitignore
   editor = vim -f
@@ -76,4 +75,8 @@
 [rerere]
   enabled = true
 [gpg]
-  program = gpg2
+  program = /usr/local/bin/gpg
+[init]
+  defaultBranch = main
+[commit]
+  gpgsign = false

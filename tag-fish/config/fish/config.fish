@@ -2,6 +2,13 @@ set FISH $HOME/.config/fish
 . $FISH/aliases.fish
 . $FISH/colors.fish
 
+if test -d $FISH/arm-mac
+  . $FISH/arm-mac/aliases.fish
+  set PATH /opt/homebrew/bin $PATH
+  set PATH /opt/homebrew/sbin $PATH
+  set EDITOR '/opt/homebrew/bin/nvim'
+end
+
 if test -d $FISH/osx
   . $FISH/osx/aliases.fish
   status --is-interactive; and . (swiftenv init -|psub)
@@ -13,6 +20,7 @@ if test -d $FISH/osx
   set PATH $HOME/.cargo/bin $PATH
   set PATH /usr/local/sbin $PATH
   set -gx PKG_CONFIG_PATH "/usr/local/opt/openssl@1.1/lib/pkgconfig"
+  set EDITOR '/usr/bin/vim'
 end
 
 if test -d $FISH/server
@@ -39,7 +47,6 @@ if test -d $FISH/server
 end
 
 
-set EDITOR '/usr/bin/vim'
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 

@@ -1,2 +1,2 @@
-TAGS="fish git ruby nvim vim osx tmux server web"
+TAGS="fish git fish-git ruby nvim vim osx tmux server web arm-mac"
 EXCLUDES="README.md"

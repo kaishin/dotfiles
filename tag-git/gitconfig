@@ -21,35 +21,28 @@
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   aa = add --all
   c = commit -m
-  cs = commit -S -m
   ca = commit --amend
-  cas = commit --amend -S
   co = checkout
   cp = cherry-pick
-  cv = commit -v
-  clean-submodules = submodule foreach --recursive git checkout .
+  checkout-submodules = submodule foreach --recursive git checkout .
+  reset-submodules = submodule foreach git reset --hard
   db = branch -D
+  dt = "!git tag -d $1 && git push --delete origin $1"
   df = diff
-  dmb = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-  f = fetch
   log10 = log -n 10
   log5 = log -n 5
   mt = mergetool
   merge-onto = "!git fetch . $(git branch-name):$1"
   mo = merge-onto
   nix = reset --hard
-  nuke = submodule foreach git reset --hard
   pf = push --force-with-lease
-  pop = stash pop
-  pl = pull
-  pr = pull-request
   ra = rebase --abort
   rc = rebase --continue
   rim = rebase -i master
   rdb = push origin --delete
   st = status -s
   squash = merge --squash
-  update-master = "!git fetch | git pull origin master"
+  update = "!git fetch | git pull origin $1"
   wipe = clean -f -d
 [push]
   default = current
@@ -80,3 +73,5 @@
   defaultBranch = main
 [commit]
   gpgsign = false
+[difftool]
+  prompt = false

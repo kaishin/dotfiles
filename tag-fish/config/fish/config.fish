@@ -10,7 +10,6 @@ if test -d $FISH/macos
   fish_add_path /opt/homebrew/sbin
   fish_add_path "$PNPM_HOME"
 
-  status --is-interactive; and . (swiftenv init -|psub)
   set EDITOR '/opt/homebrew/bin/nvim'
 end
 

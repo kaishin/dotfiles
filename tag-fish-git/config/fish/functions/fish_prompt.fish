@@ -1,5 +1,5 @@
-set _glyph \u27E9\u27E9
-set _flag \u2691
+set _glyph \u2198
+set _flag "!"
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD 2>/dev/null | sed -e 's|^refs/heads/||')
@@ -39,7 +39,7 @@ function fish_prompt
 
     # Show glyph
     if test $last_status -ne 0
-        echo -n -s $red " $_glyph "  $normal
+        echo -n -s $red " $_glyph " $normal
     else
         echo -n -s $white " $_glyph " $normal
     end

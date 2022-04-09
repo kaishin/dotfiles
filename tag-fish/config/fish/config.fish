@@ -8,7 +8,7 @@ if test -d $FISH/macos
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin
   fish_add_path /opt/homebrew/sbin
-  fish_add_path "$PNPM_HOME"
+  fish_add_path $PNPM_HOME
 
   set EDITOR '/opt/homebrew/bin/nvim'
 end

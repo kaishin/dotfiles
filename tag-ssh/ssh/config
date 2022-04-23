@@ -1,0 +1,9 @@
+Host *
+  IgnoreUnknown AddKeysToAgent,UseKeychain
+  ServerAliveInterval 240
+  AddKeysToAgent yes
+  UseKeychain yes
+Host github.com
+  Hostname github.com
+  IdentityFile ~/.ssh/github
+  PreferredAuthentications publickey

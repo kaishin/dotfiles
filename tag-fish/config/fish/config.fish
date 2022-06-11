@@ -11,7 +11,8 @@ if test -d $FISH/macos
   fish_add_path /opt/homebrew/Cellar
   fish_add_path $PNPM_HOME
 
-  set EDITOR '/opt/homebrew/bin/nvim'
+  set EDITOR /opt/homebrew/bin/nvim
+  source /opt/homebrew/opt/asdf/libexec/asdf.fish
 end
 
 if test -d $FISH/server

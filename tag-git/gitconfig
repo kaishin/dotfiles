@@ -38,7 +38,7 @@
   pf = push --force-with-lease
   ra = rebase --abort
   rc = rebase --continue
-  rim = rebase -i master
+  rim = rebase -i main
   rdb = push origin --delete
   st = status -s
   squash = merge --squash

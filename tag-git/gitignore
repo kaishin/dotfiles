@@ -39,3 +39,6 @@ DerivedData/
 
 ## Gcc Patch
 /*.gcno
+
+# Deployment
+.vercel

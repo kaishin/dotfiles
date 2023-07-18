@@ -1,3 +1,5 @@
+Include /Users/kaishin/.colima/ssh_config
+
 Host *
   IgnoreUnknown AddKeysToAgent,UseKeychain
   ServerAliveInterval 240

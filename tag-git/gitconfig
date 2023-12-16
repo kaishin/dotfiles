@@ -1,6 +1,6 @@
 [user]
-	name = Reda Lemeden
-	email = git@redalemeden.com
+  name = Reda Lemeden
+  email = git@redalemeden.com
 [core]
   excludesfile = ~/.gitignore
   editor = vim -f

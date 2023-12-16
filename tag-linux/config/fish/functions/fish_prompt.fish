@@ -1,4 +1,4 @@
-set _glyph ">"
+set _glyph "~>"
 set _flag "!!"
 
 function _git_branch_name

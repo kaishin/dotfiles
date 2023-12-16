@@ -16,26 +16,9 @@ if test -d $FISH/macos
   source /opt/homebrew/opt/asdf/libexec/asdf.fish
 end
 
-if test -d $FISH/server
-  . $FISH/server/aliases.fish
-  set -gx PATH $HOME/.swift/usr/bin $PATH
-  
-  set -l linuxbrew_bin_path "/home/linuxbrew/.linuxbrew/bin"
-  set -l linuxbrew_sbin_path "/home/linuxbrew/.linuxbrew/sbin"
-  set -l linuxbrew_manpath "/home/linuxbrew/.linuxbrew/share/man"
-  set -l linuxbrew_infopath "/home/linuxbrew/.linuxbrew/share/info"
-
-  contains -- $linuxbrew_bin_path $PATH
-    or set -gx PATH $linuxbrew_bin_path $PATH
-
-  contains -- $linuxbrew_sbin_path $PATH
-    or set -gx PATH $linuxbrew_sbin_path $PATH
-
-  contains -- $linuxbrew_manpath $MANPATH
-    or set -gx MANPATH $linuxbrew_manpath $MANPATH
-
-  contains -- $linuxbrew_infopath $INFOPATH
-    or set -gx INFOPATH $linuxbrew_infopath $INFOPATH
+if test -d $FISH/linux
+  . $FISH/linux/aliases.fish
+  source ~/.asdf/asdf.fish
 end
 
 set -x LC_ALL en_US.UTF-8

@@ -10,7 +10,7 @@ if test -d $FISH/macos
   fish_add_path /opt/homebrew/sbin
   fish_add_path /opt/homebrew/Cellar
   fish_add_path $PNPM_HOME
-  fish_add_path $HOME/.asdf/installs/rust/1.66.0/bin
+  fish_add_path $HOME/.asdf/installs/rust/1.76.0/bin
 
   set EDITOR /opt/homebrew/bin/nvim
   source /opt/homebrew/opt/asdf/libexec/asdf.fish

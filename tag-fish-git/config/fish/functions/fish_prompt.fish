@@ -31,9 +31,9 @@ function fish_prompt
         set -l git_branch (_git_branch_name)
 
         if [ (_git_is_dirty) ]
-            echo -n -s " $magenta| $normal$git_branch $red$_flag" $normal
+            echo -n -s " $blue| $normal$git_branch $red$_flag" $normal
         else
-            echo -n -s " $magenta| $normal$git_branch" $normal
+            echo -n -s " $blue| $normal$git_branch" $normal
         end
     end
 

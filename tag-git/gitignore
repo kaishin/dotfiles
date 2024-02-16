@@ -9,7 +9,6 @@ log/*.log
 rerun.txt
 tmp/**/*
 !tmp/cache/.keep
-cache/
 .env
 
 # Nova

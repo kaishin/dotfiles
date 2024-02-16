@@ -3,8 +3,6 @@ set FISH $HOME/.config/fish
 . $FISH/colors.fish
 
 if test -d $FISH/macos
-  set -gx PNPM_HOME $HOME/Library/pnpm
-  
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin
   fish_add_path /opt/homebrew/sbin
@@ -14,11 +12,16 @@ if test -d $FISH/macos
 
   set EDITOR /opt/homebrew/bin/nvim
   source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+  # pnpm
+  set -gx PNPM_HOME "~/Library/pnpm"
+  set -gx PATH "$PNPM_HOME" $PATH
+  # pnpm end
 end
 
 if test -d $FISH/linux
   . $FISH/linux/aliases.fish
-  source ~/.asdf/asdf.fish
+  source $HOME/.asdf/asdf.fish
 end
 
 set -x LC_ALL en_US.UTF-8

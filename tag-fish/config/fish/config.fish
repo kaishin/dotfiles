@@ -3,20 +3,20 @@ set FISH $HOME/.config/fish
 . $FISH/colors.fish
 
 if test -d $FISH/macos
+  # pnpm
+  set -gx PNPM_HOME $HOME/Library/pnpm
+  # pnpm end
+
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin
   fish_add_path /opt/homebrew/sbin
   fish_add_path /opt/homebrew/Cellar
-  fish_add_path $PNPM_HOME
+  fish_add_path $HOME/Library/pnpm
   fish_add_path $HOME/.asdf/installs/rust/1.76.0/bin
 
   set EDITOR /opt/homebrew/bin/nvim
   source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
-  # pnpm
-  set -gx PNPM_HOME "~/Library/pnpm"
-  set -gx PATH "$PNPM_HOME" $PATH
-  # pnpm end
 end
 
 if test -d $FISH/linux

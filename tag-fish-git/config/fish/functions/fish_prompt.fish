@@ -1,5 +1,12 @@
-set _glyph \u2198
-set _flag "!"
+if test -d $FISH/macos
+  set _glyph \u2193
+  set _flag "!"
+end
+
+if test -d $FISH/linux
+  set _glyph "~>"
+  set _flag "!"
+end
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD 2>/dev/null | sed -e 's|^refs/heads/||')

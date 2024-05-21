@@ -1,0 +1,1 @@
+alias lsa "la -al"

@@ -3,9 +3,7 @@ set FISH $HOME/.config/fish
 . $FISH/colors.fish
 
 if test -d $FISH/macos
-  # pnpm
   set -gx PNPM_HOME $HOME/Library/pnpm
-  # pnpm end
 
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin
@@ -15,9 +13,12 @@ if test -d $FISH/macos
   fish_add_path $HOME/.asdf/installs/rust/1.76.0/bin
   fish_add_path $HOME/.local/bin
 
+  if test -d $HOME/Library/Android
+    fish_add_path $HOME/Library/Android/sdk/platform-tools
+  end
+
   set EDITOR /opt/homebrew/bin/nvim
   source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
 end
 
 if test -d $FISH/linux

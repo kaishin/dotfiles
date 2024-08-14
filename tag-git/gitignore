@@ -41,3 +41,9 @@ DerivedData/
 
 # Deployment
 .vercel
+
+# VS Code
+.vscode/settings.json
+
+# Folder Icons
+Icon?

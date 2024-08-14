@@ -1,5 +1,5 @@
 if test -d $FISH/macos
-  set _glyph \u2193
+  set _glyph \u2198
   set _flag "!"
 end
 

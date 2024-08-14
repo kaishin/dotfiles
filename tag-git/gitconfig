@@ -6,14 +6,9 @@
   editor = vim -f
   quotepath = false
 [diff]
-  tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  tool = juxta
 [merge]
-  tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
+  tool = juxta
 [mergetool]
   keepBackup = false
   prompt = false
@@ -75,3 +70,9 @@
   gpgsign = false
 [difftool]
   prompt = false
+[mergetool "juxta"]
+	cmd = juxta _mergetool --base \"${BASE:-/dev/null}\" --local \"$LOCAL\" --remote \"$REMOTE\" --merged \"${MERGED:-/dev/null}\"
+	trustExitCode = true
+[difftool "juxta"]
+	cmd = juxta _difftool --local \"$LOCAL\" --remote \"$REMOTE\" --merged \"$MERGED\"
+	trustExitCode = true

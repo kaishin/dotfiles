@@ -44,6 +44,7 @@ DerivedData/
 
 # VS Code
 .vscode/settings.json
+.index-build/
 
 # Folder Icons
 Icon?

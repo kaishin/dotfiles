@@ -10,8 +10,9 @@ if test -d $FISH/macos
   fish_add_path /opt/homebrew/sbin
   fish_add_path /opt/homebrew/Cellar
   fish_add_path $HOME/Library/pnpm
-  fish_add_path $HOME/.asdf/installs/rust/1.76.0/bin
   fish_add_path $HOME/.local/bin
+
+  source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
   if test -d $HOME/Library/Android
     fish_add_path $HOME/Library/Android/sdk/platform-tools
@@ -23,7 +24,6 @@ end
 
 if test -d $FISH/linux
   . $FISH/linux/aliases.fish
-  source $HOME/.asdf/asdf.fish
 end
 
 set -x LC_ALL en_US.UTF-8

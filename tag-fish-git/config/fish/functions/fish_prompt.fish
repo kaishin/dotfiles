@@ -1,12 +1,5 @@
-if test -d $FISH/macos
-  set _glyph \u2198
-  set _flag "!"
-end
-
-if test -d $FISH/linux
-  set _glyph "~>"
-  set _flag "!"
-end
+set _glyph "->"
+set _flag "!"
 
 function _git_branch_name
   echo (command git symbolic-ref HEAD 2>/dev/null | sed -e 's|^refs/heads/||')
@@ -25,7 +18,7 @@ function fish_prompt
     set -l red (set_color -o red)
     set -l white (set_color -o white)
     set -l yellow (set_color -o yellow)
-    
+
     set -l cwd $cyan(basename (prompt_pwd))
     set -l last_status $status
     set -l uid (id -u $USER)

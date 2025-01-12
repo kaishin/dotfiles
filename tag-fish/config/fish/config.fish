@@ -28,8 +28,9 @@ end
 
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
-
 set -g fish_color_autosuggestion 585858
+
+mise activate fish | source
 
 fundle plugin 'edc/bass'
 fundle plugin 'danhper/fish-ssh-agent'

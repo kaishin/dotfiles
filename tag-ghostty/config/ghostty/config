@@ -1,6 +1,6 @@
 auto-update = download
 desktop-notifications = true
-yobackground-opacity = 0.90
+background-opacity = 0.90
 background-blur-radius = 20
 font-size = 16
 adjust-cursor-thickness = 16

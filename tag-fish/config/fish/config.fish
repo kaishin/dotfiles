@@ -12,14 +12,11 @@ if test -d $FISH/macos
   fish_add_path $HOME/Library/pnpm
   fish_add_path $HOME/.local/bin
 
-  source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
   if test -d $HOME/Library/Android
     fish_add_path $HOME/Library/Android/sdk/platform-tools
   end
 
   set EDITOR /opt/homebrew/bin/nvim
-  source /opt/homebrew/opt/asdf/libexec/asdf.fish
 end
 
 if test -d $FISH/linux

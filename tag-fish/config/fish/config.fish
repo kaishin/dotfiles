@@ -32,3 +32,7 @@ mise activate fish | source
 fundle plugin 'edc/bass'
 fundle plugin 'danhper/fish-ssh-agent'
 fundle init
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

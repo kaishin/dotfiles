@@ -16,7 +16,13 @@
   "ignore": {
     "useGitignore": true,
     "useDefaultPatterns": true,
-    "customPatterns": [".build", "**/*.svg", ".index-build"]
+    "customPatterns": [
+      ".build",
+      "**/*.svg",
+      ".index-build",
+      "*.xcodeproj/*",
+      "LICENSE"
+    ]
   },
   "security": {
     "enableSecurityCheck": true

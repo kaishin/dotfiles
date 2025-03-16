@@ -12,6 +12,7 @@ if test -d $FISH/macos
   fish_add_path $HOME/Library/pnpm
   fish_add_path $HOME/.local/bin
   fish_add_path $HOME/.codeium/windsurf/bin
+  fish_add_path $HOME/.cargo/bin
 
   if test -d $HOME/Library/Android
     fish_add_path $HOME/Library/Android/sdk/platform-tools

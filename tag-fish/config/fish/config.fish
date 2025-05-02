@@ -7,6 +7,7 @@ if test -d $FISH/macos
 
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin
+  fish_add_path /opt/homebrew/opt
   fish_add_path /opt/homebrew/sbin
   fish_add_path /opt/homebrew/Cellar
   fish_add_path $HOME/Library/pnpm

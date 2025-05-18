@@ -13,32 +13,24 @@
   keepBackup = false
   prompt = false
 [alias]
-  branch-name = "!git rev-parse --abbrev-ref HEAD"
   aa = add --all
   c = commit -m
   ca = commit --amend
   co = checkout
   cp = cherry-pick
-  checkout-submodules = submodule foreach --recursive git checkout .
-  reset-submodules = submodule foreach git reset --hard
   db = branch -D
   dt = "!git tag -d $1 && git push --delete origin $1"
-  df = diff
   log10 = log -n 10
   log5 = log -n 5
-  mt = mergetool
-  merge-onto = "!git fetch . $(git branch-name):$1"
-  mo = merge-onto
   nix = reset --hard
   pf = push --force-with-lease
   ra = rebase --abort
   rc = rebase --continue
-  rim = rebase -i main
   rdb = push origin --delete
   st = status -s
-  squash = merge --squash
   update = "!git fetch | git pull origin $1"
   wipe = clean -f -d
+  delete-local-branch-only="!git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D"
 [push]
   default = current
 [format]

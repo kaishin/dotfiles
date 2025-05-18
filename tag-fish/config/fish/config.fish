@@ -4,6 +4,7 @@ set FISH $HOME/.config/fish
 
 if test -d $FISH/macos
   set -gx PNPM_HOME $HOME/Library/pnpm
+  set -gx ANDROID_HOME $HOME/.local/share/mise/installs/android-sdk/19.0/
 
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin

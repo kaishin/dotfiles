@@ -17,6 +17,7 @@ if test -d $FISH/macos
   fish_add_path $HOME/.codeium/windsurf/bin
   fish_add_path $HOME/.cargo/bin
   fish_add_path $JAVA_HOME/bin
+  fish_add_path $HOME/go/bin
 
   if test -d $ANDROID_HOME/platform-tools
     fish_add_path $ANDROID_HOME/platform-tools

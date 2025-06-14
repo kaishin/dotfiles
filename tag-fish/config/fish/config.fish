@@ -4,7 +4,8 @@ set FISH $HOME/.config/fish
 
 if test -d $FISH/macos
   set -gx PNPM_HOME $HOME/Library/pnpm
-  set -gx ANDROID_HOME $HOME/.local/share/mise/installs/android-sdk/19.0/
+  set -gx JAVA_HOME (/usr/libexec/java_home -v 21)
+  set -gx ANDROID_HOME $HOME/.local/share/mise/installs/android-sdk/19.0
 
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin
@@ -15,9 +16,10 @@ if test -d $FISH/macos
   fish_add_path $HOME/.local/bin
   fish_add_path $HOME/.codeium/windsurf/bin
   fish_add_path $HOME/.cargo/bin
+  fish_add_path $JAVA_HOME/bin
 
-  if test -d $HOME/Library/Android
-    fish_add_path $HOME/Library/Android/sdk/platform-tools
+  if test -d $ANDROID_HOME/platform-tools
+    fish_add_path $ANDROID_HOME/platform-tools
   end
 
   set EDITOR /opt/homebrew/bin/nvim

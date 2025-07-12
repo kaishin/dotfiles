@@ -1,5 +1,5 @@
 ---
-description: An overview of the TCA architecture and how to use it in the project.
+description: An overview of the TCA architecture (The Composable Architecture).
 alwaysApply: false
 ---
 
@@ -7,10 +7,10 @@ alwaysApply: false
 
 ## State Management
 
-- *Reducer Protocol*: Core interface for organizing feature logic
-- *ObservableState*: Enables reactivity with SwiftUI views
-- *Effect*: Handles side effects and asynchronous operations
-- *Store*: Runtime container that coordinates state and actions
+- _Reducer Protocol_: Core interface for organizing feature logic
+- _ObservableState_: Enables reactivity with SwiftUI views
+- _Effect_: Handles side effects and asynchronous operations
+- _Store_: Runtime container that coordinates state and actions
 
 ### Reducer Protocol
 
@@ -21,7 +21,7 @@ The `Reducer` protocol is the cornerstone of TCA's architecture. It defines how 
 struct MyFeature {
   struct State { /* ... */ }
   enum Action { /* ... */ }
-  
+
   var body: some ReducerOf<Self> {
     Reduce { state, action in
       // Logic to handle each action
@@ -145,7 +145,7 @@ The dependency management system in the Composable Architecture is driven off of
 
 It is possible to change the dependencies for just one particular reducer inside a larger composed reducer. This can be handy when running a feature in a more controlled environment where it may not be appropriate to communicate with the outside world.
 For example, suppose you want to teach users how to use your feature through an onboarding experience. In such an experience it may not be appropriate for the user’s actions to cause data to be written to disk, or user defaults to be written, or any number of things. It would be better to use mock versions of those dependencies so that the user can interact with your feature in a fully controlled environment.
-To do this you can use the dependency(*:*:) method to override a reducer’s dependency with another value:
+To do this you can use the dependency(_:_:) method to override a reducer’s dependency with another value:
 
 ```swift
 @Reducer
@@ -212,7 +212,7 @@ func fetchUser() async {
   let store = TestStore(initialState: Onboarding.State()) {
     Onboarding()
   }
-  
+
   withDependencies {
     $0.apiClient.fetchUser = { _ in User(id: 1, name: "Blob") }
   } operation: {
@@ -343,9 +343,9 @@ struct AppFeature {
     var settings: SettingsFeature.State?
     // ...
   }
-  
+
   var body: some ReducerOf<Self> {
-    Reduce { state, action in 
+    Reduce { state, action in
       // Core app logic
     }
     .ifLet(\.login, action: \.login) {
@@ -370,7 +370,7 @@ TCA encourages creating reusable components that can be integrated into differen
 struct PaginationFeature<Element> {
   struct State { /* ... */ }
   enum Action { /* ... */ }
-  
+
   var body: some ReducerOf<Self> { /* ... */ }
 }
 
@@ -406,13 +406,13 @@ struct FeatureA {
     @Presents var detailSheet: DetailFeature.State?
     // ...
   }
-  
+
   enum Action {
     case detailSheet(PresentationAction<DetailFeature.Action>)
     case showDetailButtonTapped
     // ...
   }
-  
+
   var body: some ReducerOf<Self> {
     Reduce { state, action in
       switch action {
@@ -441,19 +441,19 @@ struct FeatureA {
     @Presents var destination: Destination.State?
     // ...
   }
-  
+
   enum Action {
     case destination(PresentationAction<Destination.Action>)
     // ...
   }
-  
+
   @Reducer
   enum Destination {
     case detail(DetailFeature)
     case settings(SettingsFeature)
     case help(HelpFeature)
   }
-  
+
   var body: some ReducerOf<Self> {
     Reduce { state, action in
       // ...
@@ -470,7 +470,7 @@ In SwiftUI views, navigation is handled with standard modifiers:
 ```swift
 struct FeatureAView: View {
   @Bindable var store: StoreOf<FeatureA>
-  
+
   var body: some View {
     List {
       // ...
@@ -503,20 +503,20 @@ struct AppFeature {
     var path = StackState<Path.State>()
     var items: IdentifiedArrayOf<Item> = []
   }
-  
+
   enum Action {
     case path(StackActionOf<Path>)
     case itemTapped(Item.ID)
     // ...
   }
-  
+
   @Reducer
   enum Path {
     case detail(DetailFeature)
     case edit(EditFeature)
     case settings(SettingsFeature)
   }
-  
+
   var body: some ReducerOf<Self> {
     Reduce { state, action in
       switch action {
@@ -537,7 +537,7 @@ struct AppFeature {
 ```swift
 struct AppView: View {
   @Bindable var store: StoreOf<AppFeature>
-  
+
   var body: some View {
     NavigationStack(
       path: $store.scope(state: \.path, action: \.path)
@@ -572,7 +572,7 @@ TCA provides a built-in dependency for dismissing features without direct parent
 struct DetailFeature {
   // ...
   @Dependency(\.dismiss) var dismiss
-  
+
   var body: some ReducerOf<Self> {
     Reduce { state, action in
       switch action {
@@ -733,10 +733,10 @@ var body: some ReducerOf<Self> {
         }
       }
       .cancellable(id: TimerID())
-      
+
     case .stopTimerButtonTapped:
       return .cancel(id: TimerID())
-      
+
     case .timerTick:
       state.count += 1
       return .none
@@ -778,15 +778,15 @@ return .run { send in
 @Reducer
 struct SearchFeature {
   @Dependency(\.continuousClock) var clock
-  
+
   enum CancelID { case search }
-  
+
   var body: some ReducerOf<Self> {
     Reduce { state, action in
       switch action {
       case let .searchQueryChanged(query):
         state.query = query
-        
+
         // Debounce by cancelling previous search and starting a new one
         return .run { send in
           try await clock.sleep(for: .milliseconds(300))
@@ -805,13 +805,13 @@ struct SearchFeature {
 return .run { send in
   await send(.step1Started)
   try await step1()
-  
+
   await send(.step2Started)
   let result = try await step2()
-  
+
   await send(.step3Started(result))
   try await step3(result)
-  
+
   await send(.sequenceCompleted)
 }
 ```
@@ -823,7 +823,7 @@ return .run { send in
   async let result1 = operation1()
   async let result2 = operation2()
   async let result3 = operation3()
-  
+
   let (r1, r2, r3) = try await (result1, result2, result3)
   await send(.allOperationsCompleted(r1, r2, r3))
 }
@@ -845,7 +845,7 @@ struct CounterTests {
     let store = TestStore(initialState: CounterFeature.State(count: 0)) {
       CounterFeature()
     }
-    
+
     await store.send(.incrementButtonTapped) {
       $0.count = 1
     }
@@ -867,7 +867,7 @@ func loadOnAppear() async {
       fetch: { "Test Data" }
     )
   }
-  
+
   await store.send(.onAppear)
   await store.receive(\.dataResponse) {
     $0.data = "Test Data"
@@ -884,7 +884,7 @@ For time-based effects, use controllable clocks instead of real time:
 func timerTest() async {
   let store = TestStore(initialState: TimerFeature.State()) {
     TimerFeature()
-  } 
+  }
 
   let testQueue = DispatchQueue.test
 
@@ -907,7 +907,7 @@ When testing features with shared state:
 
 ```swift
 // Feature
-@Reducer 
+@Reducer
 struct Feature {
   struct State: Equatable {
     @Shared var count: Int
@@ -977,7 +977,7 @@ func navigationTest() async {
     $0.destination = .detail(DetailFeature.State())
   }
 
-  await store.send(\.destination.detail.closeButtonTapped) 
+  await store.send(\.destination.detail.closeButtonTapped)
   await store.receive(\.destination.dismiss) {
     $0.destination = nil
   }

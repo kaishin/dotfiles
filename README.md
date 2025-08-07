@@ -60,12 +60,28 @@ rcup -t newtool
 ### Install on new machine
 
 ```bash
+# Clone the dotfiles repository
+git clone https://github.com/kaishin/.dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+
+# Install rcm (thoughtbot's dotfile manager)
+# macOS:
+brew install rcm
+# or follow rcm installation instructions for your platform
+
 # Install all dotfiles
 rcup
 
-# Install specific file
-rcup path/to/file
-
-# Install with specific tags
+# Or install with specific tags
 rcup -t fish -t git -t macos
+
+# Install dotagent for AI assistant rule management
+npm install -g dotagent
+
+# Import existing AI rules to unified .agent/ format
+dotagent import ~/.dotfiles
+
+# Export to specific AI tool formats as needed
+dotagent export --format claude
+dotagent export --format copilot
 ```

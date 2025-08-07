@@ -1,2 +1,2 @@
-TAGS="agent fish git fish-git ghostty nvim macos linux repomix"
-EXCLUDES="README.md"
+TAGS="agent claude fish git fish-git ghostty nvim macos linux repomix"
+EXCLUDES="README.md CLAUDE.md"

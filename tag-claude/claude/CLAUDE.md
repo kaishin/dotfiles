@@ -9,3 +9,7 @@
 ## Tools
 
 - Use Context7 to look up documentation of libraries and frameworks
+
+## Markdown Best Practices
+
+- In Markdown always leave an empty line below headings.

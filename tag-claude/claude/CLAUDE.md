@@ -13,3 +13,4 @@
 ## Markdown Best Practices
 
 - In Markdown always leave an empty line below headings.
+- Always write "✅ Task has been completed." when done.

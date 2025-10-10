@@ -39,8 +39,8 @@ function fish_prompt
 
     # Show glyph
     if test $last_status -ne 0
-        echo -n -s $red " $_glyph " $normal
+        printf " %s❯%s " $red $normal
     else
-        echo -n -s $white " $_glyph " $normal
+        printf " %s❯%s " $white $normal
     end
 end

@@ -43,8 +43,5 @@ fundle init
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
-# Claude
-alias claude="$HOME/.claude/local/claude"
-
 # Added by OrbStack: command-line tools and integration
 source $HOME/.orbstack/shell/init2.fish 2>/dev/null || :

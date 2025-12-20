@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Skill(create-slash-command)",
+      "Skill(create-slash-command:*)"
     ],
     "deny": [],
     "ask": []

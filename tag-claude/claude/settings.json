@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": []
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true,
+    "serena@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "kotlin-lsp@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "plugin-dev@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true
+}

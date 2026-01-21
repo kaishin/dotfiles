@@ -3,7 +3,8 @@
     "allow": [
       "Bash(rm:*)",
       "Skill(create-slash-command)",
-      "Skill(create-slash-command:*)"
+      "Skill(create-slash-command:*)",
+      "Bash(chmod:*)"
     ],
     "deny": [],
     "ask": []

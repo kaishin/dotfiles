@@ -1,6 +1,9 @@
 {
   "permissions": {
-    "allow": []
+    "allow": [
+      "Skill(obsidian-notes)",
+      "Skill(obsidian-notes:*)"
+    ]
   },
   "enabledPlugins": {
     "context7@claude-plugins-official": true,

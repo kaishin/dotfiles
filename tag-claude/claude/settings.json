@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Skill(obsidian-notes)",
-      "Skill(obsidian-notes:*)"
+      "Skill(obsidian-notes:*)",
+      "Skill(superpowers:writing-skills)",
+      "Skill(superpowers:writing-skills:*)"
     ]
   },
   "enabledPlugins": {

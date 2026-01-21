@@ -6,6 +6,7 @@ if test -d $FISH/macos
   set -gx PNPM_HOME $HOME/Library/pnpm
   set -gx JAVA_HOME (mise where java)
   set -gx ANDROID_HOME $HOME/.local/share/mise/installs/android-sdk/19.0
+  set -gx VAULT "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault"
 
   . $FISH/macos/aliases.fish
   fish_add_path /opt/homebrew/bin

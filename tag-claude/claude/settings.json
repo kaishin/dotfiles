@@ -14,9 +14,12 @@
     "playwright@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
     "kotlin-lsp@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": false,
     "plugin-dev@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true
+    "pyright-lsp@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true
   },
   "alwaysThinkingEnabled": true
 }

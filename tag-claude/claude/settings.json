@@ -3,8 +3,10 @@
     "allow": [
       "Skill(obsidian-notes)",
       "Skill(obsidian-notes:*)",
-      "Skill(superpowers:writing-skills)",
-      "Skill(superpowers:writing-skills:*)"
+      "Bash(gh pr view:*)",
+      "Bash(gh pr diff:*)",
+      "Bash(gh pr list:*)",
+      "Bash(tuist test:*)"
     ]
   },
   "enabledPlugins": {

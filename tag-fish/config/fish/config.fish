@@ -50,5 +50,3 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 # Added by OrbStack: command-line tools and integration
 source $HOME/.orbstack/shell/init2.fish 2>/dev/null || :
-
-# Added by Antigravity

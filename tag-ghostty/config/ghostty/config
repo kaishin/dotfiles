@@ -5,3 +5,6 @@ background-blur-radius = 20
 font-size = 16
 adjust-cursor-thickness = 16
 cursor-opacity = 0.1
+clipboard-read = allow
+clipboard-write = allow
+clipboard-paste-protection = false

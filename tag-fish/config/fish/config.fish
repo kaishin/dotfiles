@@ -9,7 +9,7 @@ if test -d $FISH/macos
   set -gx VAULT "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault"
 
   . $FISH/macos/aliases.fish
-  fish_add_path /opt/homebrew/bin
+  fish_add_path --move /opt/homebrew/bin
   fish_add_path /opt/homebrew/opt
   fish_add_path /opt/homebrew/sbin
   fish_add_path /opt/homebrew/Cellar

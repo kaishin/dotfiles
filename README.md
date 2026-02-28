@@ -22,6 +22,7 @@ rcup -t fish -t git -t macos -t nvim
 - `macos` - macOS-specific configurations
 - `linux` - Linux-specific configurations
 - `nvim` - Neovim configuration
+- `opencode` - OpenCode configuration
 - `repomix` - Repomix tool settings
 
 ## Management
@@ -84,4 +85,16 @@ dotagent import ~/.dotfiles
 # Export to specific AI tool formats as needed
 dotagent export --format claude
 dotagent export --format copilot
+```
+
+## OpenCode Setup
+
+For OpenCode to work with Alibaba Cloud, you'll need to create a file with your API key:
+
+```bash
+# Create the key file (get your key from https://modelstudio.console.alibabacloud.com/)
+echo "YOUR_API_KEY" > ~/.config/opencode/alibaba-key
+
+# Install opencode configuration
+rcup -t opencode
 ```

@@ -1,12 +1,16 @@
 Include ~/.orbstack/ssh/config
 
+Host mac.studio.bromma
+  HostName 100.85.212.86
+  User kaishin
+
 Host *
   IgnoreUnknown AddKeysToAgent,UseKeychain
   ServerAliveInterval 240
   AddKeysToAgent yes
   UseKeychain yes
 Host github.com
-  Hostname github.com
+  HostName github.com
   IdentityFile ~/.ssh/github
   PreferredAuthentications publickey
   AddKeysToAgent yes

@@ -27,6 +27,10 @@ if test -d $FISH/macos
     fish_add_path $HOME/.antigravity/antigravity/bin
   end 
 
+  if test -d $HOME/.opencode
+    fish_add_path $HOME/.opencode/bin
+  end
+
   set EDITOR /opt/homebrew/bin/nvim
 end
 
@@ -50,3 +54,4 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 # Added by OrbStack: command-line tools and integration
 source $HOME/.orbstack/shell/init2.fish 2>/dev/null || :
+

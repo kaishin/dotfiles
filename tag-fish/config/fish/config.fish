@@ -18,6 +18,7 @@ if test -d $FISH/macos
   fish_add_path $HOME/.cargo/bin
   fish_add_path $JAVA_HOME/bin
   fish_add_path $HOME/go/bin
+  fish_add_path "/Applications/Obsidian.app/Contents/MacOS"
 
   if test -d $ANDROID_HOME/platform-tools
     fish_add_path $ANDROID_HOME/platform-tools

@@ -21,11 +21,13 @@ which pfw
 If PFW is not installed, inform the user they need to install it first:
 
 1. Install via Homebrew:
+
    ```bash
    brew install pointfreeco/tap/pfw
    ```
 
 2. Login to Point-Free:
+
    ```bash
    pfw login
    ```
@@ -44,6 +46,7 @@ ls -la ~/.pfw/skills/
 ```
 
 If the folder doesn't exist or is empty, run:
+
 ```bash
 pfw install
 ```
@@ -53,6 +56,7 @@ This will download the PFW skills to `~/.pfw/skills/`.
 ### Step 3: Create local skills directory
 
 Create the `.claude/skills` directory if it doesn't exist:
+
 ```bash
 mkdir -p .claude/skills
 ```
@@ -104,26 +108,26 @@ ls -la .claude/skills/
 
 The following skills will be installed:
 
-| Skill | Description |
-|-------|-------------|
-| `pfw-case-paths` | Case paths for enum key paths |
+| Skill                         | Description                       |
+| ----------------------------- | --------------------------------- |
+| `pfw-case-paths`              | Case paths for enum key paths     |
 | `pfw-composable-architecture` | TCA (The Composable Architecture) |
-| `pfw-custom-dump` | Custom dump for debugging |
-| `pfw-dependencies` | Dependency management |
-| `pfw-identified-collections` | Identified collections |
-| `pfw-issue-reporting` | Issue reporting utilities |
-| `pfw-macro-testing` | Macro testing utilities |
-| `pfw-modern-swiftui` | Modern SwiftUI patterns |
-| `pfw-observable-models` | Observable models |
-| `pfw-perception` | Perception for observable objects |
-| `pfw-pfw` | Point-Free Workshop core |
-| `pfw-sharing` | State sharing utilities |
-| `pfw-snapshot-testing` | Snapshot testing |
-| `pfw-spm` | Swift Package Manager utilities |
-| `pfw-sqlite-data` | SQLite data management |
-| `pfw-structured-queries` | Structured queries |
-| `pfw-swift-navigation` | Swift navigation patterns |
-| `pfw-testing` | Testing utilities |
+| `pfw-custom-dump`             | Custom dump for debugging         |
+| `pfw-dependencies`            | Dependency management             |
+| `pfw-identified-collections`  | Identified collections            |
+| `pfw-issue-reporting`         | Issue reporting utilities         |
+| `pfw-macro-testing`           | Macro testing utilities           |
+| `pfw-modern-swiftui`          | Modern SwiftUI patterns           |
+| `pfw-observable-models`       | Observable models                 |
+| `pfw-perception`              | Perception for observable objects |
+| `pfw-pfw`                     | Point-Free Workshop core          |
+| `pfw-sharing`                 | State sharing utilities           |
+| `pfw-snapshot-testing`        | Snapshot testing                  |
+| `pfw-spm`                     | Swift Package Manager utilities   |
+| `pfw-sqlite-data`             | SQLite data management            |
+| `pfw-structured-queries`      | Structured queries                |
+| `pfw-swift-navigation`        | Swift navigation patterns         |
+| `pfw-testing`                 | Testing utilities                 |
 
 ## Prerequisites
 

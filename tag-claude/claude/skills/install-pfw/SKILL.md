@@ -80,7 +80,21 @@ ln -sf $HOME/.pfw/skills/swift-navigation .claude/skills/pfw-swift-navigation
 ln -sf $HOME/.pfw/skills/testing .claude/skills/pfw-testing
 ```
 
-### Step 5: Verify the installation
+### Step 5: Add to .gitignore
+
+Add the following to your `.gitignore` to avoid committing symlinks:
+
+```gitignore
+.claude/skills/pfw-*
+```
+
+Or append to existing `.gitignore`:
+
+```bash
+echo ".claude/skills/pfw-*" >> .gitignore
+```
+
+### Step 6: Verify the installation
 
 ```bash
 ls -la .claude/skills/
@@ -123,5 +137,4 @@ The following skills will be installed:
 After installing the PFW skills:
 
 1. The skills will be automatically loaded when working in this repository
-2. Add `.claude/skills/pfw-*` to your `.gitignore` if you don't want to commit the symlinks
-3. To remove the skills, simply delete the `pfw-*` symlinks from `.claude/skills/`
+2. To remove the skills, simply delete the `pfw-*` symlinks from `.claude/skills/`
